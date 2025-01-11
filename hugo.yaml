@@ -51,4 +51,4 @@ params:
 
   editURL:
     enable: true
-    base: "https://github.com/berbyte/ber/edit/main/doc/public/content"
+    base: "https://github.com/berbyte/rtfm.ber.run/edit/main/doc/public/content"
