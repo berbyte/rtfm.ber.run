@@ -1,18 +1,12 @@
 ---
 title: Documentation
-next: howto-use_labels
+next: ./manual
 ---
 
-This is a demo of the theme's documentation layout.
 
-## Hello, World!
-
-```go {filename="main.go"}
-package main
-
-import "fmt"
-
-func main() {
-    fmt.Println("Hello, World!")
-}
-```
+## Quicklinks
+{{< cards >}}
+{{< card link="documentation/agent" title="BERAgent Overview" icon="user" >}}
+{{< card link="documentation/adapter" title="BERAdapter Overview" icon="user" >}}
+{{< card link="documentation/glossary" title="Glossary" icon="user" >}}
+{{< /cards >}}
