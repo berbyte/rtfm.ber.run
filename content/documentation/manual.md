@@ -1,11 +1,12 @@
 ---
 title: Manual
-type: explanation
-prev: /documentation
-next: ./agent
+type: docs
+diataxis: explanation
+prev: documentation
+next: documentation/agent
 ---
 
-# BER framework manual
+# BER framework -- User manual
 
 | Revisions                       | Version  | Update date   | Author |
 |:-------------------------------:|:--------:|:-------------:|:------:|
@@ -17,11 +18,5 @@ To understand specific syntax related to BER please visit the glossary.
 
 For agent examples head to BERAgent Overview.
 For adapter reference head to BERAdapter Overview document.
-
-###### Notes
-All documents on this page are living documents and they are updated as we are rolling out features.
-
-For more information about licence, contribution, funding visit [BER on github](https://github.com/berbyte).
-
 
 # Quickstart
