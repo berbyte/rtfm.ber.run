@@ -37,3 +37,13 @@ BER aims to be the framework that brings natural language capabilities as useful
 
 ##### Who can benefit from BER
 BER hopes to accomodate both business users and casual audiences. Here are illustrative examples: Business users may employ BER as product owners, technical writers, IT administrators. Casual audiences, hobbyists, interested hackers can get assistance from BER in technical writing, charts and other types of visualisation.
+
+#### Contact, feedback, questions
+
+{{< callout >}}
+  All documents on this page are living documents and they are updated as we are rolling out features.
+
+For more information about licence, contribution, funding visit [BER on github](https://github.com/berbyte).
+
+  Have a question or feedback? Feel free to [open an issue](https://github.com/berbyte/ber/issues/new)!
+{{< /callout >}}
