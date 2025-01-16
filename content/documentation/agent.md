@@ -6,6 +6,9 @@ next: documentation/adapter
 ---
 
 ## Overview
+
+![](ber-002-agent.svg)
+
 A BERAgent is a container of skills covering a specific knowledge domain. BERAgents will process messages in natural language and produce task specific structured responses. It does this through a sequence of interaction by the SHAV architecture (Skills, Hooks, Actions, Validations). Each agent is a collection of one or more Skills, zero or more Hooks, zero or more Actions, and zero or more Validations. In this sense there is no difference between pre-built agents and custom agents you can create in your domain.
 
 ## Quickstart

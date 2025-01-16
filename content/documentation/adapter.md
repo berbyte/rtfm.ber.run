@@ -6,6 +6,9 @@ next: documentation/glossary
 ---
 
 ## Summary
+
+![](ber-003-adapter.svg)
+
 The BERAdapter is client-facing interface that is implemented for any system that has a method to communicate real-world input with a BERAgent. An adapter is defined for a specific interface which may be a platform e.g. Github; or a terminal.
 
 ### Inputs
