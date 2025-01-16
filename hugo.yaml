@@ -1,10 +1,10 @@
 # Hugo configuration file
-title: BER, a Behavioral Execution Runtime Framework
+title: BER
 
 # import hextra theme as module
 module:
   imports:
-  - path: github.com/imfing/hextra
+    - path: github.com/imfing/hextra
 
 markup:
   # allow raw html
@@ -25,7 +25,7 @@ menu:
       pageRef: /about
       weight: 2
     - name: Contact ↗
-      url: "mailto:contact.me@ber.sh"
+      url: "mailto:hello@ber.run"
       weight: 3
     - name: Search
       weight: 5
@@ -40,7 +40,7 @@ menu:
 params:
   navbar:
     displayTitle: true
-    displayLogo: false
+    displayLogo: true
 
   footer:
     displayCopyright: true
@@ -48,4 +48,4 @@ params:
 
   editURL:
     enable: true
-    base: "https://github.com/berbyte/rtfm.ber.run/edit/main/doc/public/content"
+    base: "https://github.com/berbyte/rtfm.ber.run/edit/main/content"
