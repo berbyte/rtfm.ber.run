@@ -1,5 +1,5 @@
 # Hugo configuration file
-title: BER - Behavioral execution runtime documentation
+title: BER, a Behavioral Execution Runtime Framework
 
 # import hextra theme as module
 module:
