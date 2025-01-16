@@ -1,16 +1,34 @@
 ---
 title: BER
+type: docs
+sidebar:
+  open: true
 ---
 
-###### Welcome to the BER framework docs
+##### Welcome to the BER framework docs
+###### What is BER?
+BER is a versatile, structured, systematic framework to employ AI models, to deploy autonomous agents in a domain of your interest, and to correspond with them specifically and reliably. The marriage of free-form data input and structured access that makes for example, spreadsheets so ubiquitous is a useful analogy to understand how BER works. BER consists of domain expert Agents composed of skills, actions, validations just like a real-world colleague. For example, a product owner agent can assist you in giving estimates, breaking down a task into requirements.
 
-BER is a versatile, structured, systematic framework to employ AI models and allow corresponding with them specifically and reliably.
+###### Features
+ - **Natural language input** Whatever the medium and the task at hand you can say so without needing to think about `syntax`
+ - **Control over AI models** Use the combination of agents, skills, validation, action, and hook execution to guide and channel the limitless raw power of LLM-type AI models
+ - **Assistance across domains** Customise any of the components to extend BER and encapsulate new fields of expertise and fine-tune various skills to generate, replicate, compare, extract, transform your input
+ - **Define the world of BER** Add existing or create new adapters to make BER available on any channel in every medium
 
-On this page you can find detailed information of the two main components of the BER system which are
- - the `BERAgent` (llm-end) and
- - the `BERAdapter` (user-facing client).
+##### Read further and explore
 
-The most important concepts, and guides on how to get started are highlighted in the Explore section further down; just after our short summary for newcomers. (Folded content, click to unwhirl.)
+ - Start using BER immediately, visit the quick-start section for instructions,
+ - Learn more by heading straight to the technical documentation,
+ - Understand how to communicate with BER.
+
+{{< cards >}}
+{{< card link="documentation" title="Documentation" icon="book-open" >}}
+{{< card link="manual" title="User Manual" icon="user" >}}
+{{< card link="documentation/agent" title="BERAgent Overview" icon="user" >}}
+{{< card link="documentation/adapter" title="BERAdapter Overview" icon="user" >}}
+{{< card link="documentation/glossary" title="Glossary" icon="user" >}}
+{{< /cards >}}
+
 
 #### For starters
 ##### Reasons
@@ -42,13 +60,3 @@ A BERAgent will process messages in natural language and produce task specific s
 <details>
 <summary>The BERAdapter is client-facing interface that is implemented for any system that has a method to communicate real-world input with a BERAgent. An adapter is defined for a specific interface which may be a platform e.g. Github; or a terminal.</summary>
 </details>
-
-
-## Explore
-{{< cards >}}
-{{< card link="documentation" title="Documentation" icon="book-open" >}}
-{{< card link="manual" title="User Manual" icon="user" >}}
-{{< card link="documentation/agent" title="BERAgent Overview" icon="user" >}}
-{{< card link="documentation/adapter" title="BERAdapter Overview" icon="user" >}}
-{{< card link="documentation/glossary" title="Glossary" icon="user" >}}
-{{< /cards >}}
