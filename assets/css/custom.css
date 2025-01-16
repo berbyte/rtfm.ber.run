@@ -7,3 +7,7 @@
 @media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
   html {
     font-size: 1.4rem;}}
+
+
+html {
+  font-size: 1rem;}
