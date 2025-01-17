@@ -24,14 +24,57 @@ BERAgents can be employed as actors in domains because of the introduction of co
  1. Enhances the results across metrics such as precision of the answer, the direction of the skill employed, reliability and repeatability of requests.
  2. Allows extensibility, configuration in how an agent uses their skills and how the procedure processes the input, the skill, the output.
 
+![](ber-004-shav.svg)
+
+Collectively we can call these `modifiers` but to give it a distinction they are named after their initials and referred to as `SHAV`.
+
 #### Skills
+##### Prompts
+Agents can contain multiple skills which are a collection of behaviors, responsibilities, and guidance. Each skill is named, and is given a specific prompting and response templates and thenwhatever direction real-world users may add. For example, a document author may have a prompt asking for technical writing in neutral language. 
+##### Templates
+The template is used to render the response in a guided, structured, predictable way. 
+##### Schema
+The response will include one or more fields from a JSON Schema that is defined as part of the skill. An example configuration might look like this in golang
+
+```go
+type Schema struct {
+	Items []struct {
+		Name        string `json:"name" jsonschema:"required,description=Name of the item"`
+		Description string `json:"description" jsonschema:"required,description=Description of the item"`
+	} `json:"items" jsonschema:"required,description=List of items to manage"`
+}
+```
+
+Find more detailed references in our API documentation.
 
 #### Hooks
+A skill is used by any creature in the hope of some benefit, reaction. With hooks the concept of skill is expanded and connected with other systems, and can be triggered or trigger events in the outside world (outside-context). 
+
+BERAgent's have 6 breakpoints during execution where we can interact with the agent and react to their work: 
+ - `Pre-LLM` 
+ - `Post-LLM`
+ - `Pre-Action`
+ - `Post-Action`
+ - `Pre-Validation`
+ - `Post-Validation`
+ 
+Basically we can oversee the state of any skilled work whenever another behavioral context is used. The state of the outside world, the state of the skill execution are both very complex and their possible interactions are limitless, which is why hooks are needed before and after each `SHAV` modifier for greater control.
 
 #### Actions
-Correspondence with the agent can be continued on a custom basis depending on user settings and agent configuration.
+Correspondence with the agent can be continued on a custom basis depending on user settings and agent configuration. 
+
+Actions are always executed as the last step, and the computed state, the rendered template becomes final. The real-world user can then define what actions would they request from their agent. 
+
+For example an `ITAgent` might present you with your new Cloudflare DNS setup. In this case it is natural to have an approve / reject boolean pair of actions for this skill. 
+
+By adding this modifier we can guarantee supervision for each agent and their skills. The agent helps us and we help the agent in return.
 
 #### Validators
+Validators run at the beginning of the agent's skill execution. They address the prompt given and filter the prompt in-between a human communicating with an agent. It is a modifier that is concerned about what can be and what must not be present for the agent to behave correctly in the skill-space selected.
+
+The two validators that are present for an agent currently are simply black and white: 
+ - An `AllowList` and 
+ - a `DenyList`
 
 ## Tutorials
 ### Add a validation rule to filter fake URL refs
