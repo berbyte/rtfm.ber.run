@@ -1,5 +1,5 @@
 ---
-title: BER Blogging agent
+title: BER
 sidebar:
   exclude: true
 ---

@@ -1,7 +1,10 @@
 ---
 title: Glossary
-type: explanation
-next: /
+cascade:
+  type: docs
+sidebar:
+  include: true
+weight: 10
 ---
 
 

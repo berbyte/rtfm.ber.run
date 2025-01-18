@@ -19,16 +19,13 @@ markup:
 menu:
   main:
     - name: Documentation
-      pageRef: /documentation
+      pageRef: /
       weight: 1
-    - name: About
-      pageRef: /about
-      weight: 2
     - name: Contact ↗
       url: "mailto:hello@ber.run"
-      weight: 3
+      weight: 2
     - name: Search
-      weight: 5
+      weight: 3
       params:
         type: search
     - name: Source code
@@ -38,13 +35,51 @@ menu:
         icon: github
 
 params:
+  description: BER AI Agent Framework
+
   navbar:
-    displayTitle: true
+    displayTitle: false
     displayLogo: true
+    logo:
+      path: images/ber-logo-black.png
+      dark: images/ber-logo-white.png
+      width: 90
+      height: 90
+      link: /
+    width: normal
+
+  page:
+    # full (100%), wide (90rem), normal (1280px)
+    width: normal
+
+  theme:
+    # light | dark | system
+    default: light
+    displayToggle: false
+
+    flexsearch:
+      # index page by: content | summary | heading | title
+      index: content
+      # full | forward | reverse | strict
+      # https://github.com/nextapps-de/flexsearch/#tokenizer-prefix-search
+      tokenize: forward
 
   footer:
     displayCopyright: true
     displayPoweredBy: false
+
+  blog:
+    list:
+      displayTags: true
+      # date | lastmod | publishDate | title | weight
+      sortBy: date
+      sortOrder: desc # or "asc"
+
+  highlight:
+    copy:
+      enable: true
+      # hover | always
+      display: hover
 
   editURL:
     enable: true

@@ -1,18 +1,22 @@
 ---
-title: BERAdapter
+title: BER Adapter
 diataxis: explanation
 prev: documentation/agent
 next: documentation/glossary
+weight: 4
 ---
 
 ## Summary
 
-![](ber-003-adapter.svg)
+The `BER Adapter` is client-facing interface that is implemented for any system that has a method to communicate real-world input with a `BER Agent`. An adapter is defined for a specific interface which may be a platform e.g. Github; or Jira.
 
-The BERAdapter is client-facing interface that is implemented for any system that has a method to communicate real-world input with a BERAgent. An adapter is defined for a specific interface which may be a platform e.g. Github; or a terminal.
+For input, the `BER Adapter` relies on webhooks and for output it integrates with the service's REST API endpoint.
+
+[![BER's Pluggable Adapter System](/diagrams/ber-003-adapter.svg)](/diagrams/ber-003-adapter.svg)
+
 
 ## Integrations
-### GitHub 
+### GitHub
 
 The BER GitHub Adapter takes the form of a GitHub application that you can install from the marketplace or through our launch site. This adapter allows any GitHub account, organisation, repository to talk with different BERAgents. It can look for issue `labels` that follow a specific schema, it reacts to any mention in an issue or discussion or comment. When installed it runs in the background on each new issue to update its context.
 
