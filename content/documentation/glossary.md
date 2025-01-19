@@ -2,6 +2,7 @@
 title: Glossary
 cascade:
   type: docs
+weight: 5
 sidebar:
   include: true
 weight: 10
@@ -12,12 +13,22 @@ weight: 10
 
 ## Core System Terms
 
- - Agent
- - Skill
- - Action
- - Validation
- - Hook
- - Adapter
+- BER
+- BERAgent
+- BERAdapter
+- SHAV Architecture
+- Skill
+- Prompt
+- Template
+- Action
+- Validator
+- Hook
+- Adapter
+
+
+------
+
+
 
 ### BERAgent
 

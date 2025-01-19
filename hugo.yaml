@@ -19,7 +19,7 @@ markup:
 menu:
   main:
     - name: Documentation
-      pageRef: /
+      pageRef: /getting-started
       weight: 1
     - name: Contact ↗
       url: "mailto:hello@ber.run"
