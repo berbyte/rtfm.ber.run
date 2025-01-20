@@ -2,7 +2,7 @@
 title: How to: Use labels on GitHub issues to invoke a BER agent
 type: docs
 diataxis: howto
-prev: documentation/adapter
+prev: documentation/howto-adapter-github-install
 ---
 
 # Overview
