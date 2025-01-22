@@ -17,14 +17,12 @@ BER is a versatile, structured, systematic framework to employ AI models, to dep
 
 The marriage of free-form data input and structured access to output makes it a great glue between systems which could not have been combined with traditional methods.
 
-BER consists of domain expert [`Agents`](/content/concepts/agent) composed of `Skills`, `Actions`, `Validators` just like a real-world colleague. It communicates on any channel defined in its [`Adapters`](/content/concepts/adapter)
+BER consists of domain expert [`Agents`](/content/concepts/agent) composed of `Skills`, `Actions`, `Validators` just like a real-world colleague. It communicates on channels defined in its [`Adapters`](/content/concepts/adapter) with 3rd party APIs, platforms, cloud services or any external system.
 
 {{< callout emoji="❓" >}}
-
-Confused by the terminology?
+Interested in the terminology?
 
 [Check out the BER glossary.](/content/references/glossary)
-
 {{< /callout >}}
 
 ## Features

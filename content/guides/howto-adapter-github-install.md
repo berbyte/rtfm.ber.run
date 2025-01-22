@@ -2,8 +2,9 @@
 title: 'How to: Connect BER as a GitHub app'
 type: docs
 diataxis: howto
-prev: documentation/adapter
-next: documentation/howto-adapter-github-label
+prev: /guides
+next: howto-adapter-github-label
+weight: 1
 ---
 
 # Overview
@@ -17,17 +18,17 @@ BER is a platform-agnostic framework. Any number of custom adapters can be built
 If you would like to know how to deploy and run the BER project please take a look at the Deployment documentation.
 
 # Installation
-In your developer settings you can create `GitHub Apps`. 
+In your developer settings you can create `GitHub Apps`.
 
 ## Webhook
 In order to connect with BER, do this:
  - Activate the webhook setting,
  - Set the value to `<URL>/api/v1/github/webhook`,
- - In order to use the webhook with SSL configure your secret key of your webhook. 
+ - In order to use the webhook with SSL configure your secret key of your webhook.
 
 ## Security
 ### Access token
-You must add a private key that signs the access token requests 
+You must add a private key that signs the access token requests
 
 ## Display information and customisation
-Optionally, you can add a logo, colors, description for the application. 
+Optionally, you can add a logo, colors, description for the application.

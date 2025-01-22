@@ -17,7 +17,7 @@ Throughout our documentation you will find an overview of this system, tutorials
 
 ## Quicklinks
 {{< cards >}}
-{{< card link="adapter" title="BER Adapter Overview" icon="user" >}}
-{{< card link="agent" title="BER Agent Overview" icon="user" >}}
-{{< card link="glossary" title="Glossary" icon="user" >}}
+{{< card link="concepts/adapter" title="BER Adapter Overview" icon="user-circle" >}}
+{{< card link="concepts/agent" title="BER Agent Overview" icon="beaker" >}}
+{{< card link="references/glossary" title="Glossary" icon="map" >}}
 {{< /cards >}}

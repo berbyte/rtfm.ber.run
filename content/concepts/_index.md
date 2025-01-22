@@ -21,13 +21,13 @@ BER hopes to accomodate both business users and casual audiences. Here are illus
 
 ## BER components
 ### Agents
-An agent component is the highest-level collection of features and data, and it covers a specific knowledge domain. The agents are task-based and follow a simple request-response pattern.
+A `BERAgent` is a container of skills covering a specific knowledge domain.
 
 ### Adapters
-An adapter is a module that brings BER to an interface near you. It is a connection, an interface, an insulation between the environment and the BER agents. Usually an adapter implementation uses a 3rd-party API of a platform. This enables BER to be present on your platforms and allows BER to handle the input and output as well. The adapters are flexible, extendable and simple objects which all have a common base abstraction.
+A `BERAdapter` is an interface that maintains communication to an external systems through their APIs.
 
 ## More about BER Components
 {{< cards >}}
-  {{< card link="agent" title="BERAgent" icon="document-duplicate" >}}
-  {{< card link="adapter" title="BERAdapter" icon="document-duplicate" >}}
+  {{< card link="agent" title="BERAgent" icon="beaker" >}}
+  {{< card link="adapter" title="BERAdapter" icon="user-group" >}}
 {{< /cards >}}
