@@ -2,7 +2,7 @@
 title: BER LLM SuperGlue
 cascade:
   type: docs
-next: usercases
+next: usecases
 toc: false
 ---
 
@@ -58,12 +58,6 @@ Get started in minutes, with easy deployment for both self-hosted and cloud envi
 
 - **Community-Driven Innovation**:
 As an open-source project, BER thrives on contributions, empowering developers to enhance and extend its capabilities.
-
-## Next
-Dive right into the following section to get started:
-{{< cards >}}
-  {{< card link="usecases" title="Usecases" icon="document-text" subtitle="Learn how BER can help you" >}}
-{{< /cards >}}
 
 ## Contact, feedback, questions
 {{< callout emoji="❓" >}}
