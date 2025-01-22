@@ -17,5 +17,5 @@ Dive deeper and further your understanding with long-form, detailed step-by-step
 
 ## Contact, feedback, questions
 {{< callout emoji="❓" >}}
-  Have a question or feedback? Feel free to [open an issue](https://github.com/berbyte/ber/issues/new)!
+  Have a question or feedback? Feel free to [open an issue](https://github.com/berbyte/ber-os/issues/new)!
 {{< /callout >}}

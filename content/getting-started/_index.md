@@ -28,5 +28,5 @@ This documentation provides an overview of the system, tutorials to help you get
 
 ## Contact, feedback, questions
 {{< callout emoji="❓" >}}
-  Have a question or feedback? Feel free to [open an issue](https://github.com/berbyte/ber/issues/new)!
+  Have a question or feedback? Feel free to [open an issue](https://github.com/berbyte/ber-so/issues/new)!
 {{< /callout >}}
