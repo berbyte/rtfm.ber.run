@@ -1,7 +1,8 @@
 ---
 title: Concepts
 weight: 3
-prev: /getting-started
+prev: getting-started
+next: BERAgent
 sidebar:
   open: true
 toc: false

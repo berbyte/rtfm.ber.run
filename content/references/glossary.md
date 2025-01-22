@@ -1,10 +1,5 @@
 ---
 title: Glossary
-cascade:
-  type: docs
-sidebar:
-  include: true
-weight: 10
 ---
 
 

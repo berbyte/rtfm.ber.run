@@ -2,11 +2,11 @@
 title: BER LLM SuperGlue
 cascade:
   type: docs
-next: getting-started
+next: usercases
 toc: false
 ---
 
-BER is a knowledge framework to build your own AI-powered IFTT workflows. With the help of BER you can create custom-tailored knowledge domains, to connect them with any interface you want to use, to collaborate with any (3rd party) API's in natural language.
+BER helps you create AI-powered workflows tailored to your needs. Build custom knowledge domains to connect any interface with any API, enabling seamless collaboration through natural language.
 
 Cut context-switching and bureaucratic overhead by using BER agents and BER adapters. Bring Your Own BER!
 
@@ -17,12 +17,12 @@ BER is a versatile, structured, systematic framework to employ AI models, to dep
 
 The marriage of free-form data input and structured access to output makes it a great glue between systems which could not have been combined with traditional methods.
 
-BER consists of domain expert [`Agents`](/content/concepts/agent) composed of `Skills`, `Actions`, `Validators` just like a real-world colleague. It communicates on channels defined in its [`Adapters`](/content/concepts/adapter) with 3rd party APIs, platforms, cloud services or any external system.
+BER consists of domain expert [`Agents`](/concepts/agent) composed of `Skills`, `Actions`, `Validators` just like a real-world colleague. It communicates on channels defined in its [`Adapters`](/concepts/adapter) with 3rd party APIs, platforms, cloud services or any external system.
 
 {{< callout emoji="❓" >}}
 Interested in the terminology?
 
-[Check out the BER glossary.](/content/references/glossary)
+[Check out the BER glossary.](/references/glossary)
 {{< /callout >}}
 
 ## Features
@@ -62,7 +62,7 @@ As an open-source project, BER thrives on contributions, empowering developers t
 ## Next
 Dive right into the following section to get started:
 {{< cards >}}
-  {{< card link="getting-started" title="Getting Started" icon="document-text" subtitle="Learn how to start using BER" >}}
+  {{< card link="usecases" title="Usecases" icon="document-text" subtitle="Learn how BER can help you" >}}
 {{< /cards >}}
 
 ## Contact, feedback, questions
