@@ -19,7 +19,7 @@ markup:
 menu:
   main:
     - name: Documentation
-      pageRef: /getting-started
+      pageRef: /
       weight: 1
     - name: Contact ↗
       url: "mailto:hello@ber.run"
@@ -35,7 +35,7 @@ menu:
         icon: github
 
 params:
-  description: BER AI Agent Framework
+  description: BER AI Agent superglue
 
   navbar:
     displayTitle: false
@@ -55,7 +55,7 @@ params:
   theme:
     # light | dark | system
     default: light
-    displayToggle: false
+    displayToggle: true
 
     flexsearch:
       # index page by: content | summary | heading | title
