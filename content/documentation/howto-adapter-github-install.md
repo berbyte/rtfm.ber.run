@@ -1,5 +1,5 @@
 ---
-title: How to: Connect BER as a GitHub app
+title: 'How to: Connect BER as a GitHub app'
 type: docs
 diataxis: howto
 prev: documentation/adapter
@@ -12,7 +12,7 @@ BER is a platform-agnostic framework. Any number of custom adapters can be built
 # Pre-requisites
  - Clone the `ber-os` repository
  - Create secret key
- - Deploy the BER project and serve it at <URL>
+ - Deploy the BER project and serve it at `<URL>`
 
 If you would like to know how to deploy and run the BER project please take a look at the Deployment documentation.
 
