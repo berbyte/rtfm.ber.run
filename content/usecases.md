@@ -1,11 +1,8 @@
 ---
 title: Usecases
-prev: /getting-started
-next: quickstart
-sidebar:
-  include: true
-  open: true
-weight: 3
+next: getting-started
+type: docs
+weight: 1
 ---
 
 BER's flexible framework enables powerful automation and integration across different domains. Here are some key use cases:
@@ -26,8 +23,28 @@ hey @ber, verify demo.ber.run points to localhost
 
 ```
 hey @ber, check the expiration date of the SSL certificate
-for demo.ber.run and notify me if it’s expiring soon
+for demo.ber.run and notify me if it's expiring soon
 ```
+
+## User Access Management
+
+Simplify employee onboarding and offboarding across multiple SaaS services. While SSO solutions help, many organizations still struggle with managing user access across various platforms that don't support single sign-on. BER automates the tedious process of user provisioning, permission management, and access revocation across disparate systems.
+
+```
+hey @ber, create accounts for jane.doe@company.com in our standard
+tools stack (Slack, Jira, GitLab) with developer permissions
+```
+
+```
+hey @ber, show me all active service accounts for
+john.smith@company.com who is leaving next week
+```
+
+```
+hey @ber, revoke all access for departed employee
+mark.wilson@company.com and generate an audit report
+```
+
 
 ## Code Visualization
 

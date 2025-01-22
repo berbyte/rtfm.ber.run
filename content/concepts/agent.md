@@ -1,8 +1,8 @@
 ---
 title: BERAgent
 diataxis: explanation
-prev: /concepts
-next: /concepts/adapter
+prev: concepts
+next: BERAdapter
 weight: 2
 ---
 
@@ -27,7 +27,7 @@ This modular approach lets you use pre-built agents or create entirely new ones 
 ### SHAV architecture
 The SHAV architecture underpins the BER, enhancing precision, reliability, and extensibility. It introduces additional control and structure to workflows, ensuring better outputs compared to standard LLM-based models.
 
-[![BER's SHAV Architecture](/diagrams/ber-004-shav.svg)](/diagrams/ber-004-shav.svg)
+[![BER's SHAV Architecture](/diagrams/ber-004-SHAV.svg)](/diagrams/ber-004-SHAV.svg)
 
 The system implements a chain-of-responsibility pattern where responses flow through the SHAV architecture:
 1. Skill selection, template rendering, NLP (skills)

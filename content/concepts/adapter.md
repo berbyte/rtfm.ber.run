@@ -1,8 +1,8 @@
 ---
 title: BERAdapter
 diataxis: explanation
-prev: /concepts/agent
-next: /tutorials
+prev: BERAgent
+next: tutorials
 weight: 3
 ---
 
