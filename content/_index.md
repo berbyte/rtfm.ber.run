@@ -104,25 +104,6 @@ Dive right into the following section to get started:
   {{< card link="getting-started" title="Getting Started" icon="document-text" subtitle="Learn how to start using BER" >}}
 {{< /cards >}}
 
-
-## Introduction for first time visitors
-
-{{< callout emoji="‼️" >}}
-
-I would move this to a spearate page in a deeper section, not to the landing page.
-
-{{< /callout >}}
-
-
-### Why we make BER
-The collective intelligence represented by the current models is a marvel in its own terms. The partial coherence and understanding can still make it frustrating to use them to complete everyday tasks. This hit-and-miss in their usefulness is a huge waste. We believe this is a topological issue that boils down to data structures.
-
-### How we envision BER
-BER aims to be the framework that brings natural language capabilities as useful and purposeful services through human interfaces.
-
-### Who can benefit from BER
-BER hopes to accomodate both business users and casual audiences. Here are illustrative examples: Business users may employ BER as product owners, technical writers, IT administrators. Casual audiences, hobbyists, interested hackers can get assistance from BER in technical writing, charts and other types of visualisation.
-
 ### Contact, feedback, questions
 
 {{< callout emoji="❓" >}}
