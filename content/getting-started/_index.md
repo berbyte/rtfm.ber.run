@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-next: quickstart
+next: usecases
 sidebar:
   include: true
   open: true
@@ -22,7 +22,7 @@ This documentation provides an overview of the system, tutorials to help you get
 
 ## Next
 {{< cards >}}
-{{< card link="quickstart" title="Quickstart Guide" icon="library" >}}
+{{< card link="usecases" title="Usecases" icon="library" >}}
 {{< /cards >}}
 
 
