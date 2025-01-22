@@ -1,6 +1,7 @@
 ---
 title: Usecases
-next: getting-started
+prev: getting-started
+next: quickstart
 type: docs
 weight: 1
 ---

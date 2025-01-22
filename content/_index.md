@@ -6,7 +6,7 @@ next: usecases
 toc: false
 ---
 
-BER helps you create AI-powered workflows tailored to your needs. Build custom knowledge domains to connect any interface with any API, enabling seamless collaboration through natural language.
+BER is the glue enabling your own AI-powered workflows. With BER, you can employ the power of AI in your problem domains. Connect your workflows to any interface and collaborate with any API—all in natural language.
 
 Cut context-switching and bureaucratic overhead by using BER agents and BER adapters. Bring Your Own BER!
 
