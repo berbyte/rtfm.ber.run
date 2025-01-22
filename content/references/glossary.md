@@ -2,7 +2,6 @@
 title: Glossary
 cascade:
   type: docs
-weight: 5
 sidebar:
   include: true
 weight: 10
