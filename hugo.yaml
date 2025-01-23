@@ -1,5 +1,5 @@
 # Hugo configuration file
-title: BER
+title: BER LLM SuperGlue - RTFM
 
 # import hextra theme as module
 module:
@@ -35,11 +35,13 @@ menu:
         icon: github
 
 params:
-  description: BER AI Agent superglue
+  description: BER LLM SuperGlue
 
   navbar:
     displayTitle: false
     displayLogo: true
+    displayVersion: true
+    version: v0.1
     logo:
       path: images/ber-logo-black.png
       dark: images/ber-logo-white.png
