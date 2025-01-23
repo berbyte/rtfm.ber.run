@@ -20,5 +20,5 @@ We created a short list of steps for curious minds and advanced users.
 
 3. Solve your problems with BER!
 {{< cards >}}
-  {{< card link="tutorials/agent" title="Creating custom agents with BER" icon="sun" >}}
+  {{< card link="/tutorials/agent" title="Creating custom agents with BER" icon="sun" >}}
 {{< /cards >}}
