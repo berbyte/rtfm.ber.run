@@ -1,5 +1,5 @@
 ---
-title: Building your BERAgent
+title: Your First BERAgent
 weight: 2
 prev: /tutorials/setup
 next: /tutorials/github
@@ -8,11 +8,21 @@ sidebar:
 ---
 
 
-## Let's build a Weather Agent
+Let's create a Weather Agent that helps visualize weather data using charts and diagrams. The agent will generate Mermaid-based visualizations to analyze weather trends and patterns. This demonstrates how to create a custom BER agent with specific skills and schema definitions.
+
+### Prerequisites
+
+Before starting this tutorial, make sure you have set up your BER development environment following the [setup guide](/tutorials/setup)
+
+```
+cd ber-os
+mkdir agents/my_frist_agent
+cd agents/my_first_agent
+```
 
 ### BERAgent configuration
 
-```golang
+```golang{filename=agent.go}
 package weather
 
 import "github.com/berbyte/ber/internal/agents"
@@ -31,7 +41,7 @@ func init() {
 
 ### Schema configuration
 
-```golang
+```golang{filename=types.go}
 package weather
 
 type WeatherTrendSchema struct {
@@ -42,7 +52,7 @@ type WeatherTrendSchema struct {
 
 ### Skill configuration
 
-```golang
+```golang{filename=skill_trend.go}
 package weather
 
 import (
@@ -84,7 +94,7 @@ Follow these guidelines:
 ```
 
 ### Hooks
-```golang
+```golang{filename=hooks.go}
 package weather
 
 import (
@@ -102,4 +112,22 @@ func postLLMRequest(ctx context.Context, response *WeatherTrendSchema) error {
 	}
 	return nil
 }
+```
+
+### Registering the new agent
+
+You need to load your agent in `agents/registry.go`:
+
+```golang{filename=registry.go}
+package agents
+
+import (
+	...
+	_ "github.com/berbyte/ber-os/agents/my_first_agent"
+)
+```
+
+### Test in the TUI:
+```
+go run . tui --debug
 ```
