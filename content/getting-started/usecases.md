@@ -13,19 +13,61 @@ BER's flexible framework enables powerful automation and integration across diff
 Streamline DNS and certificate management through natural language interactions. BER connects your project management tools directly to cloud services, enabling teams to handle domain operations through simple requests. This includes automated domain registration, DNS configuration, SSL certificate management, and proactive monitoring - all through your existing workflow tools.
 
 
-```
+
+```{filename=USER}
 hey @ber, create a DNS record for demo.ber.run pointing to 127.0.0.1
 with a TTL of 600 seconds.
 ```
 
-```
-hey @ber, verify demo.ber.run points to localhost
+```{filename=BER}
+New DNS Record
+
+============================
+| Hostname: | demo.ber.run |
+| Target:   | 127.0.0.1    |
+| Type:     | A            |
+| TTL:      | 3600         |
+============================
+
+👉 To create the record, comment: @ber approve 5bb9384d
 ```
 
+```{filename=USER}
+@ber Changed my mind, point the record to rtfm.ber.run and use a lower ttl.
 ```
-hey @ber, check the expiration date of the SSL certificate
-for demo.ber.run and notify me if it's expiring soon
+
+```{filename=BER}
+New DNS Record
+
+============================
+| Hostname: | demo.ber.run |
+| Target:   | rtfm.ber.run |
+| Type:     | CNAME        |
+| TTL:      | 600          |
+============================
+
+👉 To create the record, comment: @ber approve 734b095b
 ```
+
+```{filename=USER}
+@ber approve 734b095b
+```
+
+```{filename=BER}
+✅ demo.ber.run sucessfully created.
+
+Details:
+============================
+| Hostname: | demo.ber.run |
+| Target:   | rtfm.ber.run |
+| Type:     | CNAME        |
+| TTL:      | 600          |
+============================
+
+❗️ To revert, comment: @ber revert 0d219c57
+```
+
+
 
 ## User Access Management
 
