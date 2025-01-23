@@ -13,6 +13,7 @@ BER's flexible framework enables powerful automation and integration across diff
 Streamline DNS and certificate management through natural language interactions. BER connects your project management tools directly to cloud services, enabling teams to handle domain operations through simple requests. This includes automated domain registration, DNS configuration, SSL certificate management, and proactive monitoring - all through your existing workflow tools.
 
 
+### Example Chat
 
 ```{filename=USER}
 hey @ber, create a DNS record for demo.ber.run pointing to 127.0.0.1
