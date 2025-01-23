@@ -5,7 +5,7 @@ cascade:
 toc: false
 prev: Guides
 next:: Glossary
-weight: 1
+weight: 5
 ---
 
 An index of special terminology, agent and adapter implementations.
