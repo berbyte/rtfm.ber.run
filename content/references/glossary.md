@@ -1,5 +1,9 @@
 ---
 title: Glossary
+diataxis: reference
+next: Implementation
+prev: References
+weight: 2
 ---
 
 
