@@ -1,5 +1,5 @@
 # Hugo configuration file
-title: BER LLM SuperGlue - RTFM
+title: "BER: LLM SuperGlue - RTFM"
 
 # import hextra theme as module
 module:

@@ -1,5 +1,5 @@
 ---
-title: BER LLM SuperGlue
+title: "BER: LLM SuperGlue"
 cascade:
   type: docs
 next: usecases
