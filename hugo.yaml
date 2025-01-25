@@ -22,14 +22,17 @@ menu:
       pageRef: /
       weight: 1
     - name: Support ↗
-      url: "https://github.com/berbyte/ber-os/issues/new"
+      url: "https://github.com/berbyte/ber-os/discussions/new?category=q-a"
       weight: 2
-    - name: Search
+    - name: Feedback ↗
+      url: "https://github.com/berbyte/ber-os/discussions/new?category=feedback"
       weight: 3
+    - name: Search
+      weight: 4
       params:
         type: search
     - name: Source code
-      weight: 4
+      weight: 5
       url: "https://github.com/berbyte/ber"
       params:
         icon: github
@@ -81,7 +84,7 @@ params:
     copy:
       enable: true
       # hover | always
-      display: hover
+      display: always
 
   editURL:
     enable: true

@@ -7,11 +7,12 @@ sidebar:
   open: true
 ---
 
+
 ## Overview
 You will learn how to enable `BER` for the GitHub platform. A bot will be running in your selected repository following all events.
 
 ### Integration
-The `BER` GitHub Adapter takes the form of a GitHub application that you can install from the marketplace or through our launch site. This adapter allows any GitHub account, organisation, repository to talk with different `BERAgents`.
+The `BER` GitHub Adapter takes the form of a GitHub application. Follow our [GitHub App setup guide](/guides/howto-adapter-github-install) to create and configure a new GitHub Application. This adapter allows any GitHub account, organisation, repository to talk with different `BERAgents`.
 
 
 ## Inputs
@@ -20,8 +21,6 @@ It can look for issue labels added on issues that follow a specific schema.
 
 ### Direct Mention in Comment Field
 With any direct mention `@ber` in an issue (or discussion [or comment]).
-
-First time it is installed in a repository it runs in the background to index and update its context.
 
 ### Event Types
 The BER system primarily processes GitHub events as input signals:

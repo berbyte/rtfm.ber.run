@@ -11,7 +11,9 @@ The `BERAdapter` is client-facing interface that is implemented for any system t
 
 For input, the `BERAdapter` relies on webhooks and for output it integrates with the service's REST API endpoint. This makes adapters pluggable, flexible and extendable.
 
-[![BER's Pluggable Adapter System](/diagrams/ber-003-adapter.svg)](/diagrams/ber-003-adapter.svg)
+{{< cards cols="1" >}}
+  {{< card link="/diagrams/ber-003-adapter.svg" title="BER's Pluggable Adapter System" image="/diagrams/ber-003-adapter.svg" subtitle="Diagram showing how BER connects to external systems via BERAdapter" >}}
+{{< /cards >}}
 
 
 Find practical, detailed examples in our tutorial about Adapter topics!

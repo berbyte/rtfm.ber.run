@@ -77,7 +77,7 @@ Details:
 >
 > Interested? Try it out!
 {{< cards >}}
-  {{< card link="/concepts/agent" title="Setting up BER" icon="beaker" >}}
+  {{< card link="/getting-started/quickstart" title="Quickstart Guide" icon="beaker" >}}
 {{< /cards >}}
 
 ## Code Visualization
@@ -134,13 +134,14 @@ Details:
 
 ---
 
-> [!NOTE]
->
-> BER's flexible workflows enable you to build powerful agents for various use cases:
 {{< cards >}}
   {{< card link="/tutorials/agent" title="Building your first BERAgent" icon="sun" >}}
 {{< /cards >}}
 
+
+> [!NOTE]
+>
+> BER's flexible workflows enable you to build powerful agents for various use cases:
 
 ## User Access Management
 
