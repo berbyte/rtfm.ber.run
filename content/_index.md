@@ -6,58 +6,46 @@ next: usecases
 toc: false
 ---
 
-BER is the glue enabling your own AI-powered workflows. With BER, you can employ the power of AI in your problem domains. Connect your workflows to any interface and collaborate with any API—all in natural language.
+`BER` is the glue enabling your own AI-powered workflows. With `BER`, you can employ the power of AI in your problem domains. Connect your workflows to any interface and collaborate with any API—all in natural language.
 
-Cut context-switching and bureaucratic overhead by using BER agents and BER adapters. Bring Your Own BER!
+Cut context-switching and bureaucratic overhead. _"Bring Your Own BER!"_
 
 [![BER](/diagrams/ber-005-intro.svg)](/diagrams/ber-005-intro.svg)
 
 ## Overview
-BER is a versatile, structured, systematic framework to employ AI models, to deploy autonomous agents in a domain of your interest, and to correspond with them specifically and reliably through interface adapters.
+`BER` is a structured framework to employ AI models, to deploy autonomous agents in a domain of your interest, and to correspond with them specifically and reliably through interface adapters.
 
-The marriage of free-form data input and structured access to output makes it a great glue between systems which could not have been combined with traditional methods.
-
-BER consists of domain expert [`Agents`](/concepts/agent) composed of `Skills`, `Actions`, `Validators` just like a real-world colleague. It communicates on channels defined in its [`Adapters`](/concepts/adapter) with 3rd party APIs, platforms, cloud services or any external system.
-
-{{< callout emoji="❓" >}}
-Interested in the terminology?
-
-[Check out the BER glossary.](/references/glossary)
-{{< /callout >}}
+`BER` consists of multiple domain-expert [`Agents`](/concepts/agent) just like a real-world team. It communicates on channels defined in its [`Adapters`](/concepts/adapter) with any external system.
 
 ## Features
 - **Superglue for Your Tools**:
-Seamlessly connect ITSM, chat, ticketing, git platforms, and more with any API, database, or cloud provider.
-
-- **Highly Customizable Workflows**:
-Build workflows tailored to your organization’s unique needs, enabling automation that aligns with your exact processes.
-
-- **Control over AI models**:
-Use the combination of `skills`, `validators`, `actions`, and `hooks` to guide and channel the limitless raw power of LLM-type AI models.
-
-- **Open Source Freedom**:
-Fully open-source under an Apache license—no vendor lock-in, complete transparency, and a community-driven ecosystem.
-
-- **Enterprise-grade Efficiency**:
-Drastically reduce manual work between departments by automating request fulfillment, saving time and resources at scale.
+Connect ITSM, chat, ticketing, git platforms, and more with any API, database, or cloud provider.
 
 - **Universal Assistance**:
-Customise any of the components to extend BER and encapsulate new fields of expertise or fine-tune various skills to generate, replicate, compare, extract, transform your input
+Customise `BER` in new roles, access them from your closest lying interface.
 
-- **Cost and Time Savings**:
-Especially valuable for enterprises, BER eliminates inefficiencies, unlocking significant cost reductions and productivity gains.
+- **Highly Customizable Workflows**:
+Build workflows tailored to your organization’s unique needs.
 
-- **Developer-first Design**:
-Built with engineers in mind, offering intuitive APIs, straightforward documentation, and tools to streamline integration and workflow development.
+- **Control over AI**:
+Use the combination of [`Skills`](/references/glossary#Skills), [`Hooks`](/references/glossary#Hooks) [`Actions`](/references/glossary#Actions), [`Validators`](/references/glossary#Validators) to control conversational LLM-type AI models.
 
-- **Scalable and Reliable**:
-Designed to grow with your organization, BER handles complex workflows and scales effortlessly in enterprise environments.
+- **Enterprise-Grade Efficiency**:
+Reduce manual work between departments by automating request fulfillment, saving time and resources at scale.
+
+---
+
+- **Developer-First Design**:
+Built with engineers in mind, offering intuitive APIs, straightforward documentation.
 
 - **Rapid Setup**:
-Get started in minutes, with easy deployment for both self-hosted and cloud environments.
+Get started in minutes by reading the [Getting Started guide](/getting-started) to build and deploy in few steps.
 
-- **Community-Driven Innovation**:
-As an open-source project, BER thrives on contributions, empowering developers to enhance and extend its capabilities.
+- **Open-Source Freedom**:
+Fully open-source under an [Apache license](https://github.com/berbyte/ber-os/blob/main/LICENSE)—no vendor lock-in, complete transparency, and a community-driven ecosystem.
+
+- **Community-Driven**:
+As an open-source project, `BER` welcomes everyone interested on various levels. Contributors should read [the guide](https://github.com/berbyte/ber-os/blob/main/.github/CONTRIBUTING.md). Send feedback and open issues and we are going to do our best to make transparent decisions together.
 
 ## Contact, feedback, questions
 {{< callout emoji="❓" >}}

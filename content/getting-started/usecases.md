@@ -5,6 +5,7 @@ next: quickstart
 type: docs
 weight: 1
 ---
+
 BER's flexible framework enables powerful automation and integration across different domains.
 
 > [!NOTE]
@@ -16,7 +17,6 @@ BER's flexible framework enables powerful automation and integration across diff
 ## Domain Management
 
 Streamline DNS and certificate management through natural language interactions. BER connects your project management tools directly to cloud services, enabling teams to handle domain operations through simple requests. This includes automated domain registration, DNS configuration - all through your existing workflow tools.
-
 
 ### Example Chat
 
@@ -72,6 +72,13 @@ Details:
 
 ❗️ To revert, comment: @ber revert 0d219c57
 ```
+
+> [!NOTE]
+>
+> Interested? Try it out!
+{{< cards >}}
+  {{< card link="/concepts/agent" title="Setting up BER" icon="beaker" >}}
+{{< /cards >}}
 
 ## Code Visualization
 
@@ -130,6 +137,10 @@ Details:
 > [!NOTE]
 >
 > BER's flexible workflows enable you to build powerful agents for various use cases:
+{{< cards >}}
+  {{< card link="/tutorials/agent" title="Building your first BERAgent" icon="sun" >}}
+{{< /cards >}}
+
 
 ## User Access Management
 

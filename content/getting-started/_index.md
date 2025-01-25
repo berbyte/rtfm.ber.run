@@ -8,17 +8,19 @@ weight: 2
 ---
 
 ## Summary
-The BER framework leverages the Actor model to combine independent, distributed processing with the power of AI. This creates dynamic, guided, and modifiable agents—BERAgents—capable of assisting you and executing tasks within their defined domains.
+First, look at what you get by the end of our guide. After correct setup, you see `BER` builds server- and client-side units. By launching the TUI or integrating a GitHub application you will be able to start using `BER` -- in natural language -- requesting work-, compute-, or data-resources. The next page is going to include examples and usecases then we describe how to prepare run-time environment.
 
 [![BER's High Level System Diagram](/diagrams/ber-001-framework.svg)](/diagrams/ber-001-framework.svg)
+( `BER` implements the [Actor model](https://en.wikipedia.org/wiki/Actor_model) to combine distributed processing and AI.)
 
-The framework has two key components:
-- BERAgents: Independent actors that perform tasks and workflows.
-- BERAdapters: Communication channels that enable seamless integration with external systems like APIs, databases, and cloud services.
+The system has two key base types:
+- `BERAgents`: Independent actors that perform tasks and workflows. (server-side)
+- `BERAdapters`: Communication channels that enable integration with external systems. (client-side)
 
-Together, these components enable a highly modular and parallelized system of agents and adapters, ready to tackle complex workflows.
-
-This documentation provides an overview of the system, tutorials to help you get started, and practical examples to compose and customize BER. Start building today to see how BER can streamline your workflows.
+This documentation provides the first steps to use `BER`. You can find in other categories articles about:
+ - [Concepts](/concepts) - overview of the system,
+ - [Tutorials](/tutorials) - help material for learning,
+ - [Guides](/guides) - practical examples to compose and customize BER.
 
 ## Next
 {{< cards >}}
@@ -28,5 +30,5 @@ This documentation provides an overview of the system, tutorials to help you get
 
 ## Contact, feedback, questions
 {{< callout emoji="❓" >}}
-  Have a question or feedback? Feel free to [open an issue](https://github.com/berbyte/ber-so/issues/new)!
+  Have a question or feedback? Feel free to [open an issue](https://github.com/berbyte/ber-os/issues/new)!
 {{< /callout >}}

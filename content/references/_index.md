@@ -8,4 +8,4 @@ next:: Glossary
 weight: 5
 ---
 
-An index of special terminology, agent and adapter implementations.
+An index of `BER` terminology and existing implementations of [`BERAgents`](/concepts/agent).

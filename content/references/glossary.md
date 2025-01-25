@@ -8,56 +8,40 @@ weight: 2
 
 
 # BER System Glossary
-
 ## Core System Terms
+- [Action](#Action)
+- [BER](#BER)
+- [BERAdapter](#BERAdapter)
+- [BERAgent](#BERAgent)
+- [Domain](#Domain)
+- [Hook](#Hook)
+- [Prompt](#Prompt)
+- [Schema](#Schema)
+- [SHAV Architecture](#SHAV)
+- [Skill](#Skill)
+- [Template](#Template)
+- [Validator](#Validator)
 
-- BER
-- BERAgent
-- BERAdapter
-- SHAV Architecture
-- Skill
-- Prompt
-- Template
-- Action
-- Validator
-- Hook
-- Adapter
+---
 
+### Action
+A procedure [`BER`](#BER) can optionally do with the data received from the LLM response. It is bound to a [`Skill`](#Skill). Actions return a function operating on your data.
+> Like a callback in a front-end framework.
 
-------
+### BER
+Péter "BER" Berényi was our mentor and senior to whom we dedicate this project.
 
+`BER` means in the context of this documentation the system. 
 
+## BERAdapter
+Core system type. An adapter allows connections between [`Agents`](#BERAgent) and APIs or other external platforms. An adapter defines a client API interface that can be used for integration.
+> Like an electrical adapter used for charging devices
 
 ### BERAgent
-
+Core system type. An agent is an expert and executor of a given domain. The actions it can take and the validation an agent does should be modelled with the specific domain in mind.
 > Like a microservices architecture where each service has natural language capabilities
 
-The BER agent system implements the [Actor model](https://en.wikipedia.org/wiki/Actor_model) for distributed AI processing. Each agent is an autonomous unit that processes messages (prompts) and produces structured responses.
-
-### GitHub Request
-
-Found in `internal/integrations/github/webhook/`, handles:
-
-- Installation events
-- Issue events
-- Issue comment events
-- Event signature verification
-
-Defined in `internal/models/github.go`:
-
-```go
-type GitHubRequest struct {
-    Event     string    // Type of GitHub event
-    Payload   string    // Raw event data
-    Processed bool      // Processing status
-}
-```
-
-### BER Agent
-
-> Like a specialized service worker
-
-Core system type in `internal/config/types.go`:
+in `internal/config/types.go`:
 
 ```go
 type BERAgent struct {
@@ -69,49 +53,22 @@ type BERAgent struct {
 }
 ```
 
-### Template System
+### Domain
+We can think of a domain in a couple of different terms. (However there are no absolute rules, use your own judgment!)
+ - Function: Like a job description, a functional domain covers a role, a collection of inter-dependent tasks and skills. F.e. `product owner`.
+ - Result: We may associate domains with a type of result or presentation it has to produce. F.e. `charts`
+ - Knowledge: Certain topics or certain knowledge we would like to interact with. Eg. `BER agent builder`
 
-> Like a view layer in MVC architecture
-
-Templates provide a presentation layer that transforms structured data into human-readable formats. The system uses Go's text/template package with custom functions for documentation-specific formatting.
-
-
-
-## File Organization and their Meaning
-
-- cmd/ (Command line applications)
-- internal/ (Private implementation)
-- pkg/ (Shared packages)
-- doc/ (Documentation and decisions)
-
-
-### Error Handling
-
+## Error types
 The system categorizes errors into distinct types:
-
 - Schema violations (type errors)
 - Template rendering failures (presentation errors)
 - Processing failures (runtime errors)
 
 
+## Template System
+Templates provide a presentation layer that transforms structured data into human-readable formats. The system uses Go's text/template package with custom functions for documentation-specific formatting. Templates are bound to [`Skills`](#Skills). 
+> Like a view layer in MVC architecture
 
-
-
-## TODO: Future Glossary Terms
-
-### TBD
-
-- **Response Templates**: Standard response patterns for common requests
-- **Agent Coordination**: How multiple agents collaborate on complex tasks
-
-### Similar Concepts to Clarify
-
-- User (GitHub user vs bot distinction)
-- Client (GitHub API client vs OpenAI client)
-- Event (GitHub event types and processing)
-- Message (Comment content and processing)
-
-### Domain-Specific Terms
-
-- **GitHub App Permissions**: Required scopes and their implications
-- **LLM Integration Points**: Where and how AI models are invoked
+## User
+The documentation assumes there is a human entity giving commands and input.
