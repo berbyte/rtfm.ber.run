@@ -8,14 +8,20 @@ weight: 2
 ---
 
 ## Summary
-First, look at what you get by the end of our guide. After correct setup, you see `BER` builds server- and client-side units. By launching the TUI or integrating a GitHub application you will be able to start using `BER` -- in natural language -- requesting work-, compute-, or data-resources. The next page is going to include examples and usecases then we describe how to prepare run-time environment.
+First, look at what you get by the end of our guide. After correct setup, you see `BER` builds server- and client-side units. By launching the TUI or integrating a GitHub application you will be able to start using `BER` -- in natural language -- requesting work-, compute-, or data-resources.
 
-[![BER's High Level System Diagram](/diagrams/ber-001-framework.svg)](/diagrams/ber-001-framework.svg)
-( `BER` implements the [Actor model](https://en.wikipedia.org/wiki/Actor_model) to combine distributed processing and AI.)
+The next page is going to include examples and usecases then we describe how to prepare run-time environment.
+
+{{< cards cols="1" >}}
+  {{< card link="/diagrams/ber-001-framework.svg" title="BER System Architecture" image="/diagrams/ber-001-framework.svg" subtitle="High-level overview of BER's system architecture and components" >}}
+{{< /cards >}}
+
+
+`BER` implements the [Actor model](https://en.wikipedia.org/wiki/Actor_model) to combine distributed processing and LLMs.
 
 The system has two key base types:
-- `BERAgents`: Independent actors that perform tasks and workflows. (server-side)
-- `BERAdapters`: Communication channels that enable integration with external systems. (client-side)
+- `BERAgents`: Independent actors that perform tasks and workflows.
+- `BERAdapters`: Communication channels that enable integration with external systems.
 
 This documentation provides the first steps to use `BER`. You can find in other categories articles about:
  - [Concepts](/concepts) - overview of the system,
@@ -25,6 +31,7 @@ This documentation provides the first steps to use `BER`. You can find in other 
 ## Next
 {{< cards >}}
 {{< card link="usecases" title="Usecases" icon="library" >}}
+{{< card link="quickstart" title="Quickstart Guide" icon="library" >}}
 {{< /cards >}}
 
 

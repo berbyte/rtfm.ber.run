@@ -2,7 +2,7 @@
 title: "BER: LLM SuperGlue"
 cascade:
   type: docs
-next: usecases
+next: getting-started
 toc: false
 ---
 
@@ -10,7 +10,15 @@ toc: false
 
 Cut context-switching and bureaucratic overhead. _"Bring Your Own BER!"_
 
-[![BER](/diagrams/ber-005-intro.svg)](/diagrams/ber-005-intro.svg)
+{{< cards >}}
+  {{< card link="/getting-started/usecases" title="Explore BER in Action" icon="sparkles" >}}
+{{< /cards >}}
+
+
+{{< cards cols="1" >}}
+  {{< card link="/diagrams/ber-005-intro.svg" title="BER Workflow Overview" image="/diagrams/ber-005-intro.svg" subtitle="Bird's-eye view of how BER connects and operates" >}}
+{{< /cards >}}
+
 
 ## Overview
 `BER` is a structured framework to employ AI models, to deploy autonomous agents in a domain of your interest, and to correspond with them specifically and reliably through interface adapters.
@@ -49,6 +57,6 @@ As an open-source project, `BER` welcomes everyone interested on various levels.
 
 ## Contact, feedback, questions
 {{< callout emoji="❓" >}}
-  Have a question or feedback? Feel free to [open an issue](https://github.com/berbyte/ber-os/issues/new)!
+  Have a question or feedback? Feel free to [start a discussison](https://github.com/berbyte/ber-os/discussions/new/choose)!
 {{< /callout >}}
 

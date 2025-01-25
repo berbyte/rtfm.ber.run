@@ -22,7 +22,7 @@ cd agents/my_first_agent
 
 ### BERAgent configuration
 
-```golang{filename=agent.go}
+```golang{linenos=table,hl_lines=[2,4],linenostart=1,filename=agent.go}
 package weather
 
 import "github.com/berbyte/ber/internal/agents"
@@ -41,7 +41,7 @@ func init() {
 
 ### Schema configuration
 
-```golang{filename=types.go}
+```golang{linenos=table,hl_lines=[2,4],linenostart=1,filename=types.go}
 package weather
 
 type WeatherTrendSchema struct {
@@ -52,7 +52,7 @@ type WeatherTrendSchema struct {
 
 ### Skill configuration
 
-```golang{filename=skill_trend.go}
+```golang{linenos=table,hl_lines=[2,4],linenostart=1,filename=skill_trend.go}
 package weather
 
 import (
@@ -94,7 +94,7 @@ Follow these guidelines:
 ```
 
 ### Hooks
-```golang{filename=hooks.go}
+```golang{linenos=table,hl_lines=[2,4],linenostart=1,filename=hooks.go}
 package weather
 
 import (
@@ -118,7 +118,7 @@ func postLLMRequest(ctx context.Context, response *WeatherTrendSchema) error {
 
 You need to load your agent in `agents/registry.go`:
 
-```golang{filename=registry.go}
+```golang{linenos=table,hl_lines=[2,4],linenostart=1,filename=registry.go}
 package agents
 
 import (

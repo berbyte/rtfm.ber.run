@@ -6,19 +6,68 @@ sidebar:
   include: true
 ---
 
-We created a short list of steps for curious minds and advanced users.
+1. Clone the repository:
 
-1. Take the source code and clone it to your machine, then collect dependencies, then set environment.
-{{< cards >}}
-  {{< card link="/tutorials/setup" title="Setting up BER" icon="fast-forward" >}}
-{{< /cards >}}
+```
+git clone git@github.com:berbyte/ber-os.git
+cd ber-os
+```
 
-2. Configure the BERAdapter for GitHub or launch the TUI to start communicating immediately with `BERAgents`.
+2. Install the dependencies:
+
+```
+go mod tidy
+```
+
+## Usage
+
+### TUI
+
+1. Set the environment variable
+
+```
+export OPENAI_API_KEY=""
+```
+
+2. Run the TUI:
+
+```
+go run . tui
+```
+
+### GitHub Application
+
+1. [Create a new GitHub Application for BER](/references/github-adapter-setup)
+2. Set the environment variables
+```
+export GH_APP_ID=""
+export GH_PRIVATE_KEY="" # base64 decoded pem
+export GH_WEBHOOK_SECRET=""
+
+export OPENAI_API_KEY=""
+```
+
+3. Start ngrok:
+
+```
+ngrok http http://localhost:8080
+```
+
+4. Run the application:
+```
+go run . webhook
+```
+
+
+
+## Next Steps
+
+1. Configure the BERAdapter for GitHub to start communicating immediately with `BERAgents`.
 {{< cards >}}
   {{< card link="/tutorials/github" title="Accessing BER from a repository" icon="sparkles" >}}
 {{< /cards >}}
 
-3. Solve your problems with `BER`.
+2. Solve your problems with `BER`.
 {{< cards >}}
   {{< card link="/tutorials/agent" title="Creating custom agents with BER" icon="sun" >}}
 {{< /cards >}}
