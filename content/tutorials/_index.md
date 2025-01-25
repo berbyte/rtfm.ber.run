@@ -8,13 +8,13 @@ sidebar:
 toc: false
 ---
 
-The Tutorials section helps you learn about running and extending BER.
+The Tutorials section helps you learn about running and extending `BER`.
 
 <!--more-->
 
 {{< cards >}}
-  {{< card link="setup" title="Setting up BER" icon="document-duplicate" >}}
-  {{< card link="agent" title="Building your first BERAgent" icon="document-duplicate" >}}
-  {{< card link="github" title="Setting up the GitHub Adapter" icon="document-duplicate" >}}
-  {{< card link="tui" title="Using our Terminal User Interface" icon="document-duplicate" >}}
+  {{< card link="setup" title="Setting up BER" icon="fast-forward" >}}
+  {{< card link="agent" title="Building your first BERAgent" icon="sun" >}}
+  {{< card link="github" title="Setting up the GitHub Adapter" icon="sparkles" >}}
+  {{< card link="tui" title="Using our Terminal User Interface" icon="terminal" >}}
 {{< /cards >}}

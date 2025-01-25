@@ -8,7 +8,7 @@ sidebar:
 ---
 
 
-Let's create a Weather Agent that helps visualize weather data using charts and diagrams. The agent will generate Mermaid-based visualizations to analyze weather trends and patterns. This demonstrates how to create a custom BER agent with specific skills and schema definitions.
+Let's create a Weather Agent to visualize weather data using diagrams. The agent will generate Mermaid-based visualizations. This demonstrates how to create a custom BER agent with specific skills and schema definitions.
 
 ### Prerequisites
 
