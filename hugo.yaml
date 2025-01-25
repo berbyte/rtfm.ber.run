@@ -21,8 +21,8 @@ menu:
     - name: Documentation
       pageRef: /
       weight: 1
-    - name: Contact ↗
-      url: "mailto:hello@ber.run"
+    - name: Support ↗
+      url: "https://github.com/berbyte/ber-os/issues/new"
       weight: 2
     - name: Search
       weight: 3
