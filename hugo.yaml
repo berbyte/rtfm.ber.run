@@ -89,3 +89,7 @@ params:
   editURL:
     enable: true
     base: "https://github.com/berbyte/rtfm.ber.run/edit/main/content"
+
+services:
+  googleAnalytics:
+    ID: G-VJJYMNF5T7
