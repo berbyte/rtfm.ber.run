@@ -33,7 +33,7 @@ menu:
         type: search
     - name: Source code
       weight: 5
-      url: "https://github.com/berbyte/ber"
+      url: "https://github.com/berbyte/ber-os"
       params:
         icon: github
 

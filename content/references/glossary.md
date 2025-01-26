@@ -26,7 +26,7 @@ A procedure [`BER`](#BER) can optionally do with the data received from the LLM 
 > Like a callback in a front-end framework.
 
 ### BER
-Péter "BER" Berényi was our mentor and senior to whom we dedicate this project.
+Péter "ber" Berényi was our mentor and senior to whom we dedicate this project.
 
 `BER` means in the context of this documentation the system.
 
