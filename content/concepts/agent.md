@@ -9,7 +9,7 @@ weight: 2
 ## Overview
 A BERAgent is a customizable container of skills designed for specific knowledge domains. Agents process natural language inputs, execute tasks via API calls, and return structured responses using the SHAV architecture (Skills, Hooks, Actions, Validators). You can build your own agents or use pre-built ones to automate workflows.
 
-{{< cards >}}
+{{< cards cols="1" >}}
   {{< card link="/diagrams/ber-002-agent.svg" title="BERAgent Execution Workflow" image="/diagrams/ber-002-agent.svg" subtitle="Detailed diagram showing the workflow steps of a BERAgent" >}}
 {{< /cards >}}
 
