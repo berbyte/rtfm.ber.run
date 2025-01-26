@@ -92,3 +92,8 @@ By adding this modifier we can guarantee supervision for each agent and their sk
 Validators ensure inputs and outputs conform to predefined rules, increasing reliability and preventing errors.
 
 Validators operate at the start of a skill execution to ensure the agent functions correctly within its domain.
+
+
+{{< cards >}}
+  {{< card link="/tutorials/agent" title="Build Your First Agent" icon="code" >}}
+{{< /cards >}}
