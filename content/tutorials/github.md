@@ -10,26 +10,59 @@ sidebar:
 ---
 
 ## Overview
-You will learn how to enable `BER` for the GitHub platform. This adapter allows any GitHub account, organisation, repository to talk with different `BERAgents`. A bot will be running in your selected repository parsing select events.
+You will learn how to enable `BER` for the GitHub platform. This adapter allows any GitHub account, organisation, repository to talk with different `BERAgents`. A bot will be running in your selected repository to help you run tasks.
 
-Refer to the concept of `BERAdapters` connecting you and `BER`:
+Refer to the concept of `BERAdapters` and how it is connecting you and `BER`:
 {{< cards >}}
   {{< card link="/concepts/adapter" title="BERAdapter" icon="sparkles" >}}
 {{< /cards >}}
 
- In this tutorial we demonstrate how to create a GitHub app, so BER can be reached from your repository.
+ In this tutorial we demonstrate how to create a GitHub app, so `BER` can be reached from your repository. Then we show simple options and commands to control `BER` from GitHub.
 
-## Installing and Authorization
+## Installation
 
-1. Navigate to [GitHub's New App Registration page](https://github.com/settings/apps/new)
-2. Copy the settings from the screenshot:
+Navigate to [GitHub's New App Registration page](https://github.com/settings/apps/new) and enter your configurations and settings as follows.
 
-{{< cards cols="1" >}}
-  {{< card link="/images/ber-github-app.png" title="GitHub App Settings" image="/images/ber-github-app.png" subtitle="Screenshot showing the required settings for creating a BER GitHub app" >}}
+### Register new GitHub App
+ | Field name          | Field value       |
+ |:-------------------:|:-----------------:|
+ | **GitHub App name** | `BER-test`        |
+ | **Write**           | `BER rulez`       |
+ | **Homepage URL**    | `https://ber.run` |
+
+### Webhook
+  | Field name      | Field value                  |
+  |:---------------:|:----------------------------:|
+  | **Active**      | [x]                          |
+  | **Webhook URL** | `https://<YOUR_WEBHOOK_URL>` |
+  | **Secret**      | `sUpEr-Str0nG-S3cr3t-!!@`    |
+
+### Permissions
+  | Field name   | Field value              |
+  |:------------:|:------------------------:|
+  | **Issues**   | `Access: Read and write` |
+  | **Metadata** | `Access: Read-only`      |
+
+### Subscribe to events
+  | Field name        | Field value |
+  |:-----------------:|:-----------:|
+  | **Issues**        | [x]         |
+  | **Sub issues**    | [x]         |
+  | **Meta**          | [x]         |
+  | **Issue comment** | [X]         |
+  | **Label**         | [x]         |
+  | **Milestone**     | [x]            |
+
+
+Follow our visual cheatsheet for highlighted instructions in image format
+
+{{< cards >}}
+  {{< card link="/references/images" title="Images"  >}}
 {{< /cards >}}
 
+## Commands
+Learn more about how you can use the `BERAdapter` for GitHub.
 
-## Inputs
 ### Label-Based Direct Selection
 It can look for issue labels added on issues that follow a specific schema.
 
@@ -49,11 +82,9 @@ Messages flow through a validation pipeline:
 2. Intent detection ("@ber" mentions)
 3. Content extraction (body parsing)
 
-## Outputs
- - Natural language
- - Templated, structured response
- - Visualisation
-
 ## Examples
- - Go to an issue and add a label following the schema `Agent:ProductOwner`.
- - Open an issue and mention BER as `@ber` and describe what agent you want to employ and which skill is needed for your task.
+Look at usecases and how `BER` stays out of the way
+
+{{< cards >}}
+  {{< card link="/getting-started/usecases" title="Explore BER in Action" icon="sparkles" >}}
+{{< /cards >}}

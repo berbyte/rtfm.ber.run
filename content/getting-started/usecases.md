@@ -8,7 +8,7 @@ weight: 1
 
 BER's flexible framework enables powerful automation and integration across different domains.
 
-Here are some key use cases, which you can already try out:
+Here are some key use cases, which you can already try out.
 
 ## Domain Management
 
