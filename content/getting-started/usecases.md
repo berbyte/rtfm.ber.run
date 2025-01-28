@@ -72,7 +72,7 @@ Details:
 ```
 
 {{< cards cols=1 >}}
-  {{< card title="DNS Management with BER" subtitle="BER's Cloudflare agent working with GitHub adapter to manage DNS records" image="https://rtfm.ber.run/demo.gif" >}}
+  {{< card title="DNS Management Through Natural Language" subtitle="Watch BER handle DNS record creation, updates and validation through natural language commands, demonstrating the power of combining Cloudflare's API with GitHub's collaborative interface" image="https://rtfm.ber.run/demo.gif" >}}
 {{< /cards >}}
 
 
