@@ -13,7 +13,7 @@ First, look at what you get by the end of our guide. After correct setup, you se
 The next page is going to include examples and usecases then we describe how to prepare run-time environment.
 
 {{< cards cols="1" >}}
-  {{< card link="/diagrams/ber-001-framework.svg" title="BER System Architecture" image="/diagrams/ber-001-framework.svg" subtitle="High-level overview of BER's system architecture and components" >}}
+  {{< card link="/diagrams/ber-001-framework.svg" image="/diagrams/ber-001-framework.svg" title="End-to-End Request Processing Architecture in BER Framework" subtitle="User input flows through BER: requests enter via BERAdapters, get routed to appropriate BERAgents who select relevant skills, generate proposed solutions for user approval, and finally execute approved actions through external APIs" >}}
 {{< /cards >}}
 
 

@@ -12,7 +12,7 @@ The `BERAdapter` is a core module of `BER`. The module connects the `BER` server
 It is a tool that by implementing 3rd-party APIs, adds control of `BERAgents` to a platform users are already familiar with. `BERAdapters` make `@ber` instantly available across your workspaces.
 
 {{< cards cols="1" >}}
-  {{< card link="/diagrams/ber-003-adapter.svg" title="BER's Pluggable Adapter System" image="/diagrams/ber-003-adapter.svg" subtitle="Diagram showing how BER connects to external systems via BERAdapter" >}}
+  {{< card link="/diagrams/ber-003-adapter.svg" title="BERAdapter: Universal Integration Through Webhooks and REST APIs" image="/diagrams/ber-003-adapter.svg" subtitle="BERAdapter uses webhooks to receive requests and REST APIs to send responses, enabling seamless integration with any platform supporting these standard protocols" >}}
 {{< /cards >}}
 
 ## Features

@@ -10,7 +10,7 @@ weight: 2
 A BERAgent is a customizable container of skills designed for specific knowledge domains. Agents process natural language inputs, execute tasks via API calls, and return structured responses using the SHAV architecture (Skills, Hooks, Actions, Validators). You can build your own agents or use pre-built ones to automate workflows.
 
 {{< cards cols="1" >}}
-  {{< card link="/diagrams/ber-002-agent.svg" title="BERAgent Execution Workflow" image="/diagrams/ber-002-agent.svg" subtitle="Detailed diagram showing the workflow steps of a BERAgent" >}}
+  {{< card link="/diagrams/ber-002-agent.svg" title="BERAgent: Intelligent Request Processing with SHAV Architecture" image="/diagrams/ber-002-agent.svg" subtitle="Request flows through BER's workflow engine: Pre-LLM hooks (AI firewall, input validation), LLM processing, Post-LLM hooks (data enrichment, output formatting), followed by validation and action execution through external APIs" >}}
 {{< /cards >}}
 
 BERAgents will process messages in natural language and produce task specific structured responses. It does this through a sequence of interaction by the **SHAV architecture** (`Skills`, `Hooks`, `Actions`, `Validators`).
@@ -30,7 +30,7 @@ This modular approach lets you use pre-built agents or create entirely new ones 
 The SHAV architecture underpins the `BER`, enhancing precision, reliability, and extensibility. It introduces additional control and structure to workflows, ensuring better outputs compared to standard LLM-based models.
 
 {{< cards cols="1">}}
-  {{< card link="/diagrams/ber-004-SHAV.svg" title="BERAgent SHAV Architecture" image="/diagrams/ber-004-SHAV.svg" subtitle="Diagram showing the SHAV (Skills, Hooks, Actions, Validators) architecture of BERAgents" >}}
+  {{< card link="/diagrams/ber-004-SHAV.svg" title="BERAgent SHAV Architecture: Component Structure" image="/diagrams/ber-004-SHAV.svg" subtitle="Detailed visualization of BERAgent's SHAV architecture showing the hierarchical relationship between components - Skills (containing Prompts and Templates), Hooks, Actions, and Validators - and how they are embedded within the Agent" >}}
 {{< /cards >}}
 
 The system implements a chain-of-responsibility pattern where responses flow through the SHAV architecture:
