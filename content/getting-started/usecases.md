@@ -8,17 +8,15 @@ weight: 1
 
 BER's flexible framework enables powerful automation and integration across different domains.
 
-> [!NOTE]
->
-> Here are some key use cases, which you can already try out:
-
-
+Here are some key use cases, which you can already try out:
 
 ## Domain Management
 
-Streamline DNS and certificate management through natural language interactions. BER connects your project management tools directly to cloud services, enabling teams to handle domain operations through simple requests. This includes automated domain registration, DNS configuration - all through your existing workflow tools.
-
-### Example Chat
+> [!TIP]
+> In this example, a user manages DNS records through natural language commands:
+> 1. Initially requests an A record for demo.ber.run
+> 2. Changes their mind to create a CNAME record instead
+> 3. Approves the change, which is then implemented
 
 ```{filename=USER}
 hey @ber, create a DNS record for demo.ber.run pointing to 127.0.0.1
@@ -88,9 +86,11 @@ Details:
 
 ## Code Visualization
 
-Transform code into clear, visual diagrams automatically. BER helps development teams understand and document code behavior by generating flow diagrams, sequence diagrams, and architecture visualizations. This ensures documentation stays current with the codebase and helps teams communicate technical concepts effectively.
-
-### Example Chat
+> [!TIP]
+> This example shows how BER can automatically generate diagrams from code:
+> 1. User requests a sequence diagram for authentication flow
+> 2. BER analyzes the code and generates a Mermaid diagram
+> 3. User approves and the diagram is saved as SVG
 
 ```{filename=USER}
 hey @ber, generate a sequence diagram for the user authentication flow
@@ -103,8 +103,8 @@ Generated Sequence Diagram:
 
 graph TD;
     A["Start"] --> B["User Attempts Login"];
-    B --> C{Is User Valid?};
     C -->|Yes| D["Generate JWT Token"];
+    B --> C{Is User Valid?};
     C -->|No| E["Return Error Message"];
     D --> F["Send Token to Client"];
     F --> G["User Logged In Successfully"];
@@ -151,9 +151,11 @@ Details:
 
 ## User Access Management
 
-Simplify employee onboarding and offboarding across multiple SaaS services. While SSO solutions help, many organizations still struggle with managing user access across various platforms that don't support single sign-on. BER automates the tedious process of user provisioning, permission management, and access revocation across disparate systems.
-
-### Example Chat
+> [!TIP]
+> This interaction demonstrates automated user provisioning:
+> 1. Request to create accounts across multiple services
+> 2. BER prepares the changes for approval
+> 3. Upon approval, accounts are created with appropriate permissions
 
 ```{filename=USER}
 hey @ber, create accounts for jane.doe@company.com in our standard
@@ -208,9 +210,11 @@ mark.wilson@company.com and generate an audit report
 
 ## Custom Reports
 
-Simplify data access and analysis across your organization. BER can dynamically construct database queries, generate formatted reports, and deliver insights through your preferred channels. This eliminates manual data extraction and formatting work while ensuring consistent reporting across teams.
-
-### Example Chat
+> [!TIP]
+> This example shows BER's reporting capabilities:
+> 1. User requests a signup report with specific parameters
+> 2. BER generates a preview of the data
+> 3. Upon approval, full report is generated in multiple formats
 
 ```{filename=USER}
 hey @ber, generate a report of all users who signed up
@@ -252,9 +256,11 @@ Details:
 
 ## Incident Management
 
-Accelerate incident response through intelligent automation. BER connects your monitoring systems, chat platforms, and ITSM tools to streamline the entire incident lifecycle. From initial detection through resolution and post-mortems, BER reduces manual coordination work and helps teams resolve issues faster.
-
-### Example Chat
+> [!TIP]
+> This example demonstrates automated monitoring setup:
+> 1. User requests log monitoring for specific errors
+> 2. BER configures the monitoring rules
+> 3. Upon approval, monitoring is enabled with ServiceNow integration
 
 ```{filename=USER}
 hey @ber, monitor the logs for ConnectionTimeout errors
