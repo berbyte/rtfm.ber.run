@@ -25,15 +25,15 @@ cd agents/my_first_agent
 ```golang{linenos=table,hl_lines=[2,4],linenostart=1,filename=agent.go}
 package weather
 
-import "github.com/berbyte/ber/internal/agents"
+import "github.com/berbyte/ber/internal/agent"
 
 func init() {
-	agents.RegisterAgent(agents.BERAgent{
-		Name:        "Weather Visualization",
+	agent.RegisterAgent(agent.BERAgent{
+		Name:        "Weather Agent",
 		Tag:         "weather",
-		Description: "Weather Agent: helps visualize and analyze weather data using charts and diagrams",
-		Skills: []agents.BaseSkill{
-			WeatherTrendChart,
+		Description: "Weather Agent: provides current weather information for any location",
+		Skills: []agent.BaseSkill{
+			WeatherInfo,
 		},
 	})
 }
@@ -44,9 +44,16 @@ func init() {
 ```golang{linenos=table,hl_lines=[2,4],linenostart=1,filename=types.go}
 package weather
 
-type WeatherTrendSchema struct {
-	DiagramCode string `json:"diagram_code" jsonschema:"required,description=The valid Mermaid code Flow or sequence or pie chart"`
-	Explanation string `json:"explanation" jsonschema:"required,description=Detailed explanation of the diagram"`
+type WeatherResponseSchema struct {
+	// These fields will be filled by the LLM
+	Location    string  `json:"location" jsonschema:"required,description=The location name"`
+	Latitude    float64 `json:"latitude" jsonschema:"required,description=The latitude of the location"`
+	Longitude   float64 `json:"longitude" jsonschema:"required,description=The longitude of the location"`
+	// These will be filled in the PostLLMHook
+	Temperature float64 `json:"temperature"`
+	WindSpeed   float64 `json:"wind_speed"`
+	Humidity    int     `json:"humidity"`
+	IsDay       bool    `json:"is_day"`
 }
 ```
 
@@ -55,42 +62,36 @@ type WeatherTrendSchema struct {
 ```golang{linenos=table,hl_lines=[2,4],linenostart=1,filename=skill_trend.go}
 package weather
 
-import (
-	"github.com/berbyte/ber/internal/agents"
-)
+import "github.com/berbyte/ber/internal/agent"
 
-type WeatherTrendSkill struct {
-	agents.Skill[WeatherTrendSchema]
+type WeatherSkill struct {
+	agent.Skill[WeatherResponseSchema]
 }
 
-var WeatherTrendChart = WeatherTrendSkill{
-	Skill: agents.Skill[WeatherTrendSchema]{
-		Name:        "Weather Trend Chart",
-		Tag:         "trend",
-		Description: "Creates weather trend visualizations using Mermaid charts",
-		Prompt: `As a weather visualization expert, create a Mermaid chart based on the provided weather data.
-Follow these guidelines:
-- Create a line or bar chart showing temperature/precipitation trends
-- Include clear labels for time periods (days/hours)
-- Add appropriate units (°C/°F for temperature, mm/inches for precipitation)
-- Use color coding for different weather parameters
-- Ensure the chart is easy to read and interpret
-- Use valid Mermaid syntax that can be rendered in markdown
-- Don't include markdown code blocks in the response`,
-		Template: `### Weather Trend Visualization
+var WeatherInfo = WeatherSkill{
+	Skill: agent.Skill[WeatherResponseSchema]{
+		Name:        "Weather Information",
+		Tag:         "weather",
+		Description: "Displays current weather information for a location",
+		Prompt: `As a location information extractor, analyze the following text and extract:
+1. The location or city name
+2. Its exact latitude and longitude coordinates
 
-{{.diagram_code}}
+Return the information in JSON format with the following fields:
+- location: the name of the location
+- latitude: the latitude coordinate
+- longitude: the longitude coordinate`,
+		Template: `### Weather in {{.location}} ({{.latitude}}, {{.longitude}}) {{if .is_day}}☀️{{else}}🌙{{end}}
 
-### Analysis
-
-{{.explanation}}`,
-		LLMSchema: WeatherTrendSchema{},
-		Hooks: agents.Hooks[WeatherTrendSchema]{
-			PostLLMRequest: postLLMRequest,
+🌡️ Temperature: {{.temperature}}°C
+💨 Wind Speed: {{.wind_speed}} km/h
+💧 Humidity: {{.humidity}}%`,
+		LLMSchema: WeatherResponseSchema{},
+		Hooks: agent.Hooks[WeatherResponseSchema]{
+			PostLLMRequest: fetchWeatherData,
 		},
 	},
 }
-
 ```
 
 ### Hooks
@@ -99,17 +100,51 @@ package weather
 
 import (
 	"context"
-	"strings"
+	"encoding/json"
+	"fmt"
+	"net/http"
 )
 
-func postLLMRequest(ctx context.Context, response *WeatherTrendSchema) error {
+type weatherResponse struct {
+	Current struct {
+		Temperature float64 `json:"temperature_2m"`
+		WindSpeed   float64 `json:"wind_speed_10m"`
+		RelHumidity int     `json:"relative_humidity_2m"`
+		IsDay       int     `json:"is_day"`
+	} `json:"current"`
+}
+
+func fetchWeatherData(ctx context.Context, response *WeatherResponseSchema) error {
 	if ctx.Err() != nil {
 		return ctx.Err()
 	}
 
-	if !strings.HasPrefix(response.DiagramCode, "```mermaid") {
-		response.DiagramCode = "```mermaid\n" + response.DiagramCode + "\n```"
+	// Get weather data using the coordinates
+	weatherURL := fmt.Sprintf("https://api.open-meteo.com/v1/forecast?latitude=%.6f&longitude=%.6f&current=temperature_2m,relative_humidity_2m,wind_speed_10m,is_day",
+		response.Latitude, response.Longitude)
+
+	req, err := http.NewRequestWithContext(ctx, "GET", weatherURL, nil)
+	if err != nil {
+		return fmt.Errorf("creating weather request: %w", err)
 	}
+
+	resp, err := http.DefaultClient.Do(req)
+	if err != nil {
+		return fmt.Errorf("fetching weather data: %w", err)
+	}
+	defer resp.Body.Close()
+
+	var weatherResp weatherResponse
+	if err := json.NewDecoder(resp.Body).Decode(&weatherResp); err != nil {
+		return fmt.Errorf("decoding weather response: %w", err)
+	}
+
+	// Update the response with real weather data
+	response.Temperature = weatherResp.Current.Temperature
+	response.WindSpeed = weatherResp.Current.WindSpeed
+	response.Humidity = weatherResp.Current.RelHumidity
+	response.IsDay = weatherResp.Current.IsDay == 1
+
 	return nil
 }
 ```
@@ -131,3 +166,7 @@ import (
 ```
 go run . tui --debug
 ```
+
+{{< cards cols="1" >}}
+  {{< card link="/screenshots/tui-weather.png" image="/screenshots/tui-weather.png" title="Weather Agent in TUI" >}}
+{{< /cards >}}
