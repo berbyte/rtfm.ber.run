@@ -73,6 +73,12 @@ Details:
 ❗️ To revert, comment: @ber revert 0d219c57
 ```
 
+{{< cards cols=1 >}}
+  {{< card title="DNS Management with BER" subtitle="BER's Cloudflare agent working with GitHub adapter to manage DNS records" image="https://rtfm.ber.run/demo.gif" >}}
+{{< /cards >}}
+
+
+
 > [!NOTE]
 >
 > Interested? Try it out!
