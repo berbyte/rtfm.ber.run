@@ -14,7 +14,6 @@ Cut context-switching and bureaucratic overhead. _"Bring Your Own BER!"_
   {{< card link="/getting-started/usecases" title="Explore BER in Action" icon="sparkles" >}}
 {{< /cards >}}
 
-
 {{< cards cols="1" >}}
   {{< card link="/diagrams/ber-005-intro.svg" image="/diagrams/ber-005-intro.svg" title="Seamless AI Integration Across Your Tools" subtitle="Users interact with BER through familiar platforms like GitHub, Jira, or Slack, BER processes natural language inputs to execute actions across APIs, cloud services, and databases" >}}
 {{< /cards >}}
@@ -31,9 +30,6 @@ Connect ITSM, chat, ticketing, git platforms, and more with any API, database, o
 
 - **Universal Assistance**:
 Customise `BER` in new roles, access them from your closest lying interface.
-
-- **Highly Customizable Workflows**:
-Build workflows tailored to your organization’s unique needs.
 
 - **Control over AI**:
 Use the combination of [`Skills`](/references/glossary#Skills), [`Hooks`](/references/glossary#Hooks) [`Actions`](/references/glossary#Actions), [`Validators`](/references/glossary#Validators) to control conversational LLM-type AI models.
