@@ -1,18 +1,32 @@
 ---
 title: GitHub Adapter Setup
 weight: 3
+type: docs
+diataxis: tutorial
 prev: /tutorials/agent
 next: /tutorials/tui
 sidebar:
   open: true
 ---
 
-
 ## Overview
-You will learn how to enable `BER` for the GitHub platform. A bot will be running in your selected repository following all events.
+You will learn how to enable `BER` for the GitHub platform. This adapter allows any GitHub account, organisation, repository to talk with different `BERAgents`. A bot will be running in your selected repository parsing select events.
 
-### Integration
-The `BER` GitHub Adapter takes the form of a GitHub application. Follow our [GitHub App setup guide](/guides/howto-adapter-github-install) to create and configure a new GitHub Application. This adapter allows any GitHub account, organisation, repository to talk with different `BERAgents`.
+Refer to the concept of `BERAdapters` connecting you and `BER`:
+{{< cards >}}
+  {{< card link="/concepts/adapter" title="BERAdapter" icon="sparkles" >}}
+{{< /cards >}
+
+ In this tutorial we demonstrate how to create a GitHub app, so BER can be reached from your repository.
+ 
+## Installing and Authorization
+
+1. Navigate to [GitHub's New App Registration page](https://github.com/settings/apps/new)
+2. Copy the settings from the screenshot:
+
+{{< cards cols="1" >}}
+  {{< card link="/images/ber-github-app.png" title="GitHub App Settings" image="/images/ber-github-app.png" subtitle="Screenshot showing the required settings for creating a BER GitHub app" >}}
+{{< /cards >}}
 
 
 ## Inputs
