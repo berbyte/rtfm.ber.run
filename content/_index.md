@@ -26,33 +26,27 @@ Cut context-switching and bureaucratic overhead. _"Bring Your Own BER!"_
 
 ## Features
 - **Superglue for Your Tools**:
-Connect ITSM, chat, ticketing, git platforms, and more with any API, database, or cloud provider.
+Link the software you already use with any system or API, eliminating manual work.
 
-- **Universal Assistance**:
-Customise `BER` in new roles, access them from your closest lying interface.
+- **Natural Language Commands**:
+Automate tasks easily with AI-powered natural language instructions.
 
 - **Control over AI**:
-Use the combination of [`Skills`](/references/glossary#Skills), [`Hooks`](/references/glossary#Hooks) [`Actions`](/references/glossary#Actions), [`Validators`](/references/glossary#Validators) to control conversational LLM-type AI models.
+Fine-tune tasks using tools like [`Skills`](/references/glossary#Skills), [`Hooks`](/references/glossary#Hooks) [`Actions`](/references/glossary#Actions), [`Validators`](/references/glossary#Validators) for accurate results.
 
-- **Enterprise-Grade Efficiency**:
-Reduce manual work between departments by automating request fulfillment, saving time and resources at scale.
-
----
-
-- **Developer-First Design**:
-Built with engineers in mind, offering intuitive APIs, straightforward documentation.
+- **Made for Developers**:
+Simple APIs and clear documentation make it easy to get started and customize.
 
 - **Rapid Setup**:
 Get started in minutes by reading the [Getting Started guide](/getting-started) to build and deploy in few steps.
 
 - **Open-Source Freedom**:
-Fully open-source under an [Apache license](https://github.com/berbyte/ber-os/blob/main/LICENSE)—no vendor lock-in, complete transparency, and a community-driven ecosystem.
+Fully open-source under an Apache License. [Apache license](https://github.com/berbyte/ber-os/blob/main/LICENSE). No vendor lock-in, free, and supported by the community.
 
 - **Community-Driven**:
-As an open-source project, `BER` welcomes everyone interested on various levels. Contributors should read [the guide](https://github.com/berbyte/ber-os/blob/main/.github/CONTRIBUTING.md). Send feedback and open issues and we are going to do our best to make transparent decisions together.
+As an open-source project, `BER` welcomes everyone interested. Contributors should read [the guide](https://github.com/berbyte/ber-os/blob/main/.github/CONTRIBUTING.md). Send feedback and open issues and we are going to do our best to make transparent decisions together.
 
 ## Contact, feedback, questions
 {{< callout emoji="❓" >}}
   Have a question or feedback? Feel free to [start a discussison](https://github.com/berbyte/ber-os/discussions/new/choose)!
 {{< /callout >}}
-

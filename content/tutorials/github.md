@@ -34,7 +34,7 @@ Navigate to [GitHub's New App Registration page](https://github.com/settings/app
   | Field name      | Field value                  |
   |:---------------:|:----------------------------:|
   | **Active**      | [x]                          |
-  | **Webhook URL** | `https://<YOUR_WEBHOOK_URL>` |
+  | **Webhook URL** | `https://<YOUR_WEBHOOK_URL>/api/v1/github` |
   | **Secret**      | `sUpEr-Str0nG-S3cr3t-!!@`    |
 
 ### Permissions
