@@ -21,6 +21,7 @@ cd agents/my_first_agent
 ```
 
 ### BERAgent configuration
+First, let's create the agent configuration. This file registers our Weather Agent with BER, defining its name, tag, and available skills. The `init()` function ensures the agent is registered when the package is imported.
 
 ```golang{linenos=table,hl_lines=[2,4],linenostart=1,filename=agent.go}
 package weather
@@ -40,6 +41,9 @@ func init() {
 ```
 
 ### Schema configuration
+Next, we'll define the schema for our Weather Agent. This schema specifies the data structure that will be used to store and process weather information. The schema includes fields for location details (filled by the LLM) and weather metrics (populated by the API hook).
+
+The schema uses struct tags to provide JSON mapping and validation rules. The `jsonschema` tags define validation rules and field descriptions that will be processed by the LLM to populate values according to the schema requirements. See [JSON Schema documentation](https://json-schema.org/understanding-json-schema/) for more details on validation rules.
 
 ```golang{linenos=table,hl_lines=[2,4],linenostart=1,filename=types.go}
 package weather
@@ -58,6 +62,13 @@ type WeatherResponseSchema struct {
 ```
 
 ### Skill configuration
+Now, let's define the skill configuration for our Weather Agent. This configuration specifies how the skill processes user input, interacts with the LLM, and formats the output. The skill includes:
+
+- A name and description for identification
+- A prompt that guides the LLM in extracting location information
+- A template for formatting the weather data output
+- The schema we defined earlier for data structure
+- A hook that fetches real weather data after LLM processing
 
 ```golang{linenos=table,hl_lines=[2,4],linenostart=1,filename=skill_trend.go}
 package weather
@@ -95,6 +106,9 @@ Return the information in JSON format with the following fields:
 ```
 
 ### Hooks
+The `fetchWeatherData` hook is responsible for retrieving real-time weather data from the Open-Meteo API using the location coordinates extracted by the LLM. It updates the response schema with current temperature, wind speed, humidity and daylight status.
+
+
 ```golang{linenos=table,hl_lines=[2,4],linenostart=1,filename=hooks.go}
 package weather
 
@@ -151,7 +165,7 @@ func fetchWeatherData(ctx context.Context, response *WeatherResponseSchema) erro
 
 ### Registering the new agent
 
-You need to load your agent in `agents/registry.go`:
+Register your agent by adding it to `agents/registry.go`:
 
 ```golang{linenos=table,hl_lines=[2,4],linenostart=1,filename=registry.go}
 package agents
