@@ -15,10 +15,10 @@ You will learn how to enable `BER` for the GitHub platform. This adapter allows 
 Refer to the concept of `BERAdapters` connecting you and `BER`:
 {{< cards >}}
   {{< card link="/concepts/adapter" title="BERAdapter" icon="sparkles" >}}
-{{< /cards >}
+{{< /cards >}}
 
  In this tutorial we demonstrate how to create a GitHub app, so BER can be reached from your repository.
- 
+
 ## Installing and Authorization
 
 1. Navigate to [GitHub's New App Registration page](https://github.com/settings/apps/new)
