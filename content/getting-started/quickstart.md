@@ -19,7 +19,7 @@ cd ber-os
 go mod tidy
 ```
 
-You can now decide how you want to run BER:
+Choose how to run BER:
 
 ### Running BER as a GitHub Application
 
