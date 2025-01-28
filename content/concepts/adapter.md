@@ -15,29 +15,32 @@ It is a tool that by implementing 3rd-party APIs, adds control of `BERAgents` to
   {{< card link="/diagrams/ber-003-adapter.svg" title="BER's Pluggable Adapter System" image="/diagrams/ber-003-adapter.svg" subtitle="Diagram showing how BER connects to external systems via BERAdapter" >}}
 {{< /cards >}}
 
-
 ## Features
 The role of the module is to enable frictionless communication between the user and `BER`. This component is used for task discussion and remote task execution. Configuration about how to select `BERAgents` can also be communicated here.
 
-| User Intent  |           Input            |                         Output                          |
-| :----------: | :------------------------: | :-----------------------------------------------------: |
-|   *Action*   |        `{ approval         |                rejection } <TASK_HASH>`                 | external system response                                |
-| *Discussion* | free-form natural language | templated, structured, Agent-generated natural language |
-| *Selection*  |          `{ label          |                      similarity }`                      | templated, structured, Agent-generated natural language |
+All commands and instructions are in natural language. All of the input fields such as attachments can be used to enrich the text.
+
+When remote tasks are executed, and external systems are affected the `BERAdapter` can display and accept special forms. Every special form takes precedence over natural language input. This separate format gives control and oversight to the user, similar to having draft, preview or `--dry-run` abilities.
 
 Find practical, detailed examples in our tutorial about BERAdapter for GitHub
 {{< cards >}}
   {{< card link="/tutorials/github" title="BERAdapter" icon="sparkles" >}}
 {{< /cards >}}
 
-## Inputs
+### Inputs
 To receive user inputs `BERAdapters` have API endpoints that can be used as webhooks. In the general form, the input can be natural language and structured data. In the special form, the input is a formal command, such as approving or rejecting an external change or configuring settings.
 
-
-## Outputs
+### Outputs
 The output is always received on the same `BERAdapter` where the input was sent.
 
 Depending on where the response comes from, an external system or a `BERAgent` the structure of the output is different.
 
 The output event is skipped by the same `BERAdapter` to prevent infinite reaction-cycles.
 
+### Comparative chart
+
+| User Intent | Input                                  | Output                                                 |
+|:-----------:|:--------------------------------------:|:------------------------------------------------------:|
+| *Action*      | `{ approval, rejection } <TASK_HASH>` | external system response                               |
+| *Discussion*  | free-form natural language             | templated, structured, Agent-generated natural language |
+| *Selection*   | `{ label, similarity }`               | templated, structured, Agent-generated natural language |
