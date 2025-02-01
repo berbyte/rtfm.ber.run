@@ -15,7 +15,7 @@ Cut context-switching and bureaucratic overhead. _"Bring Your Own BER!"_
 {{< /cards >}}
 
 {{< cards cols="1" >}}
-  {{< card link="/diagrams/ber-005-intro.svg" image="/diagrams/ber-intro-splash.svg" title="Seamless AI Integration Across Your Tools" subtitle="Users interact with BER through familiar platforms like GitHub, Jira, or Slack, BER processes natural language inputs to execute actions across APIs, cloud services, and databases" >}}
+  {{< card link="/diagrams/ber-intro-splash.svg" image="/diagrams/ber-intro-splash.svg" title="Seamless AI Integration Across Your Tools" subtitle="Users interact with BER through familiar platforms like GitHub, Jira, or Slack, BER processes natural language inputs to execute actions across APIs, cloud services, and databases" >}}
 {{< /cards >}}
 
 
