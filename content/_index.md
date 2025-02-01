@@ -1,5 +1,5 @@
 ---
-title: "BER: LLM SuperGlue"
+title: "BER: SuperGlue for Your AI Agents"
 cascade:
   type: docs
 next: getting-started
