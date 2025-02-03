@@ -5,10 +5,9 @@ cascade:
 next: getting-started
 toc: false
 ---
+Cut context-switching and bureaucratic overhead.
 
-`BER` is the glue enabling your own AI-powered workflows. With `BER`, you can employ the power of AI in your problem domains. Connect your workflows to any interface and collaborate with any API—all in natural language.
-
-Cut context-switching and bureaucratic overhead. _"Bring Your Own BER!"_
+>_"Bring Your Own BER!"_
 
 {{< cards >}}
   {{< card link="/getting-started/usecases" title="Explore BER in Action" icon="sparkles" >}}
@@ -20,19 +19,25 @@ Cut context-switching and bureaucratic overhead. _"Bring Your Own BER!"_
 
 
 ## Overview
-`BER` is a structured framework to employ AI models, to deploy autonomous agents in a domain of your interest, and to correspond with them specifically and reliably through interface adapters.
+Use `BER` to access skilled agents that assist you with your work. Keep talking in natural language on the most common work platforms and receive relevant answers reliably with `BER`'s built-in LLM control structures.
 
-`BER` consists of multiple domain-expert [`Agents`](/concepts/agent) just like a real-world team. It communicates on channels defined in its [`Adapters`](/concepts/adapter) with any external system.
+`BER` takes the form of a commandable, AI-powered bot with the handle `@ber`. On any platform you install it, you will have access to that context for all your workflows, and all workflows can be used from one context.
+
+`BER` as a software system consists of multiple domain-expert [`Agents`](/concepts/agent) with different skills, content validators, reacting to hooks with actions, just like a real-world team. Agents have a basic structure that allows users to build their own agents in their custom knowledge domain.
+
+You can communicate on channels defined in its [`Adapters`](/concepts/adapter) with any external system. You can already install `BER` as an application for GitHub. Adapters are pluggable to make it easy to integrate a `@ber`bot with your own workplace API.
+
+The site shows the [`Concepts`](/concepts) for understanding more, offers a [Getting Started guide](/getting-started), teaches how to use `BER` in [`Tutorials`](/tutorials).
 
 ## Features
 - **Superglue for Your Tools**:
 Link the software you already use with any system or API, eliminating manual work.
 
-- **Natural Language Commands**:
-Automate tasks easily with AI-powered natural language instructions.
+- **Natural Language as a Front-end**:
+Resolve tasks fast by making a simple comment.
 
-- **Control over AI**:
-Fine-tune tasks using tools like [`Skills`](/references/glossary#Skills), [`Hooks`](/references/glossary#Hooks) [`Actions`](/references/glossary#Actions), [`Validators`](/references/glossary#Validators) for accurate results.
+- **Controlled AI as a Back-end**:
+Using tools like [`Skills`](/references/glossary#Skills), [`Hooks`](/references/glossary#Hooks) [`Actions`](/references/glossary#Actions), [`Validators`](/references/glossary#Validators) for accurate results and robust workflows.
 
 - **Made for Developers**:
 Simple APIs and clear documentation make it easy to get started and customize.
