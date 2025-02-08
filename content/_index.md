@@ -5,6 +5,12 @@ cascade:
 next: getting-started
 toc: false
 ---
+
+
+BER is the superglue between your collaboration tools and the APIs, cloud providers, and databases you need to manage.
+
+Powered by an LLM, it understands natural language commands, translates them into executable actions, and runs them with your approval—automating workflows, reducing manual effort, and keeping everything in sync.
+
 Cut context-switching and bureaucratic overhead.
 
 >_"Bring Your Own BER!"_
