@@ -1,5 +1,5 @@
 ---
-title: "BER: SuperGlue for Your AI Agents"
+title: "BER: Connect, Automate, and Sync Everything"
 cascade:
   type: docs
 next: getting-started
