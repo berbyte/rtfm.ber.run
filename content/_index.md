@@ -6,21 +6,18 @@ next: getting-started
 toc: false
 ---
 
+BER is the **superglue between** your collaboration tools (**Email**, **GitHub**, Jira, Teams) and the **APIs**, **Cloud providers**, and **databases** you need to manage.
 
-BER is the superglue between your collaboration tools and the APIs, cloud providers, and databases you need to manage.
+Powered by an LLM, **it understands natural language commands**, translates them into **executable actions**, and **runs them with your approval**.
 
-Powered by an LLM, it understands natural language commands, translates them into executable actions, and runs them with your approval—automating workflows, reducing manual effort, and keeping everything in sync.
-
-Cut context-switching and bureaucratic overhead.
-
->_"Bring Your Own BER!"_
+**Automating workflows, reducing manual effort, and keeping everything in sync.**
 
 {{< cards >}}
   {{< card link="/getting-started/usecases" title="Explore BER in Action" icon="sparkles" >}}
 {{< /cards >}}
 
 {{< cards cols="1" >}}
-  {{< card link="/diagrams/ber-intro-splash.svg" image="/diagrams/ber-intro-splash.svg" title="Seamless AI Integration Across Your Tools" subtitle="Users interact with BER through familiar platforms like GitHub, Jira, or Slack, BER processes natural language inputs to execute actions across APIs, cloud services, and databases" >}}
+  {{< card link="/diagrams/ber-intro-splash.svg" image="/diagrams/ber-intro-splash.svg" title="Seamless Integration Across Your Tools" subtitle="Users interact with BER through familiar platforms like Email, GitHub, Jira, or Slack. BER processes natural language inputs to execute actions across APIs, cloud services, and databases" >}}
 {{< /cards >}}
 
 

@@ -45,7 +45,7 @@ Next, we'll define the schema for our Weather Agent. This schema specifies the d
 
 The schema uses struct tags to provide JSON mapping and validation rules. The `jsonschema` tags define validation rules and field descriptions that will be processed by the LLM to populate values according to the schema requirements. See [JSON Schema documentation](https://json-schema.org/understanding-json-schema/) for more details on validation rules.
 
-```golang{linenos=table,hl_lines=[2,4],linenostart=1,filename=types.go}
+```golang{linenos=table,hl_lines=[2,4],linenostart=1,filename=schema.go}
 package weather
 
 type WeatherResponseSchema struct {

@@ -5,7 +5,6 @@ prev: getting-started
 next: BERAgent
 sidebar:
   open: true
-toc: false
 ---
 
 The Concepts section helps you learn about the parts of the `BER` system in detail.
